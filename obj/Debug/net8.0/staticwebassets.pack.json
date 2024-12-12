@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/default.jpeg",
+      "PackagePath": "staticwebassets/images/default.jpeg"
+    },
+    {
       "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

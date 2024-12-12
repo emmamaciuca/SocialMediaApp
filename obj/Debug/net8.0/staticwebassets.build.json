@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IcRioffbIrcBz6v+lzJFhIlkYDbdZ26r3XiWJpxUq9U=",
+  "Hash": "cU3wBauCcIJUbx0aIY2u5f5Jgmey/QwNFOrI2urhZmw=",
   "Source": "SocialMediaApp",
   "BasePath": "_content/SocialMediaApp",
   "Mode": "Default",
@@ -1231,6 +1231,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/default.jpeg",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/default.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/default.jpeg"
     },
     {
       "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/js/site.js",

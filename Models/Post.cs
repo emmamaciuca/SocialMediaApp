@@ -22,6 +22,9 @@ public class Post
 
     // cheie externa user - o postare e asociata unui user
     public string? UserId { get; set; }
+    
+    public virtual ApplicationUser? User { get; set; }
+
 
     // o postare are o colectie de comantarii 
     public virtual ICollection<Comment>? Comments { get; set; }

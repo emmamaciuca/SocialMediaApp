@@ -22,7 +22,7 @@ public class ApplicationUser: IdentityUser
     //poza profil
     public string Image { get; set; }
 
-    public string visibility { get; set; }
+    public string Visibility { get; set; }
 
 
     //un user poate posta mai multe comentarii
