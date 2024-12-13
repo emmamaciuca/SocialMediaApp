@@ -41,12 +41,50 @@ namespace SocialMediaApp.Controllers
         [Authorize(Roles = "User,Admin")]
         public async Task<IActionResult> Index()
         {
-            var users = from user in db.Users
-                        orderby user.UserName
-                        select user;
+            var currentUser = await _userManager.GetUserAsync(User);
+
+            var users = db.Users
+                       .Where(user => user.Id != currentUser.Id)
+                       .OrderBy(user => user.UserName);
+            // var users = from user in db.Users
+            //             where user.Id != currentUser.Id
+            //             orderby user.UserName
+            //             select user;
+
+            if (TempData.ContainsKey("message"))
+            {
+                ViewBag.Message = TempData["message"];
+                ViewBag.Alert = TempData["messageType"];
+            }
+
+            
+            ViewBag.UserCurent = currentUser;
+
+            var search = "";
+
+            if (Convert.ToString(HttpContext.Request.Query["search"]) != null)
+            {
+                search = Convert.ToString(HttpContext.Request.Query["search"]).
+                Trim(); // eliminam spatiile libere 
+
+
+                //Cautare dupa nume complet + username
+                List<string> userIds = db.Users.Where
+                                        (
+                                         a => a.LastName.Contains(search)
+                                         || a.FirstName.Contains(search) 
+                                         || a.UserName.Contains(search)
+                                         ).Select(a => a.Id).ToList();
+
+
+
+                // Lista userilor care contin cuvantul cautat
+                users = db.Users.Where(user => userIds.Contains(user.Id) && user.Id != currentUser.Id).OrderBy(user => user.UserName);
+            }
+
 
             ViewBag.UsersList = users;
-            ViewBag.UserCurent = await _userManager.GetUserAsync(User);
+            ViewBag.SearchString = search;
 
             return View();
         }
@@ -57,6 +95,8 @@ namespace SocialMediaApp.Controllers
         public async Task<ActionResult> Show(string id)
         {
             ApplicationUser user = db.Users.Find(id);
+
+            
             var roles = await _userManager.GetRolesAsync(user);    
 
             ViewBag.Roles = roles;

@@ -9,6 +9,14 @@
     </div>
 }
 
+@* Motor de cautare *@
+<form method="GET">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Cauta utilizatori" name="search" value="@ViewBag.SearchString">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </div>
+</form>
+
 
 <div class="row">
 @foreach (var user in ViewBag.UsersList)
