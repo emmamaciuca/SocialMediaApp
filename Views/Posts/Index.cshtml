@@ -1,0 +1,47 @@
+
+<br />
+<h2 class="text-center">Afisare postari</h2>
+
+<br />
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert-success p-3 rounded-3 text-center mb-5 @ViewBag.Alert">
+        @ViewBag.Message
+    </div>
+}
+
+<br />
+
+
+
+@if (ViewBag.Posts != null)
+{
+@foreach (var post in ViewBag.Posts)
+{
+    <div class="card">
+
+            <div class="card-body">
+
+                <div class="card-text">@post.Content</div>
+
+                <div class="d-flex justify-content-between flex-row mt-5">
+
+                    <div><i class="bi bi-person"></i> @post.User.UserName</div>
+                    <span class="alert-success px-1 align-content-center">@post.Date</span>
+
+                </div>
+
+            </div>
+
+        <a class="btn btn-success" asp-controller="Posts" asp-action="Show" asp-route-id="@post.Id">Afisare postare</a>
+
+    </div>
+
+    <br />
+    <br />
+}
+}
+
+
+@* Afisarea paginata a postarilor (daca e nevoie) *@

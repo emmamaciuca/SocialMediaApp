@@ -10,18 +10,21 @@ public class ApplicationUser: IdentityUser
 {
     //atribute required user 
     //nume complet
-    [Required(ErrorMessage = "Prenumele este obligatorie")]
+    [Required(ErrorMessage = "Prenumele este obligatoriu")]
     public string? FirstName { get; set; }
-    [Required(ErrorMessage = "Numele este obligatorie")]
+
+    [Required(ErrorMessage = "Numele este obligatoriu")]
     public string? LastName { get; set; }
 
     //descriere 
-    [Required(ErrorMessage = "Descrierea este obligatoriu")]
+    [Required(ErrorMessage = "Descrierea este obligatorie")]
     public string Content { get; set; }
 
     //poza profil
-    public string Image { get; set; }
+    //[Required(ErrorMessage = "Poza de profil este obligatorie")]
+    public string? Image { get; set; }
 
+    [Required(ErrorMessage = "Vizibilitatea este obligatorie")]
     public string Visibility { get; set; }
 
 
@@ -32,7 +35,11 @@ public class ApplicationUser: IdentityUser
     public virtual ICollection<Post>? Posts { get; set; } 
 
     //many-to-many dintre grup si user
-    public virtual ICollection<UserGroup>? UserGroup { get; set; }
+    // un user poate avea mai multe grupuri
+    public virtual ICollection<UserGroup>? UserGroups { get; set; }
+
+    //un user poate avea mai multe mesaje 
+    public virtual ICollection<Message>? Messages { get; set; } 
 
     //many-to-many dintre user si user - follow
     //userii care il urmaresc pe utilizatorul curent

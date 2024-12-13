@@ -462,3 +462,6 @@
 /Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll
 /Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll
 /Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/bin/Debug/net8.0/runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll
+/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/bin/Debug/net8.0/AngleSharp.dll
+/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/bin/Debug/net8.0/AngleSharp.Css.dll
+/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/bin/Debug/net8.0/HtmlSanitizer.dll

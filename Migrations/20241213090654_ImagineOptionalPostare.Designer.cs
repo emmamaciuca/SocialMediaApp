@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SocialMediaApp.Data;
 
@@ -11,9 +12,11 @@ using SocialMediaApp.Data;
 namespace SocialMediaApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241213090654_ImagineOptionalPostare")]
+    partial class ImagineOptionalPostare
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -238,6 +241,7 @@ namespace SocialMediaApp.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<string>("Image")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("LastName")
@@ -556,7 +560,7 @@ namespace SocialMediaApp.Migrations
                         .IsRequired();
 
                     b.HasOne("SocialMediaApp.Models.ApplicationUser", "User")
-                        .WithMany("Messages")
+                        .WithMany()
                         .HasForeignKey("UserId");
 
                     b.Navigation("Group");
@@ -576,13 +580,13 @@ namespace SocialMediaApp.Migrations
             modelBuilder.Entity("SocialMediaApp.Models.UserGroup", b =>
                 {
                     b.HasOne("SocialMediaApp.Models.Group", "Group")
-                        .WithMany("UserGroups")
+                        .WithMany("UserGroup")
                         .HasForeignKey("GroupId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("SocialMediaApp.Models.ApplicationUser", "User")
-                        .WithMany("UserGroups")
+                        .WithMany("UserGroup")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -600,18 +604,16 @@ namespace SocialMediaApp.Migrations
 
                     b.Navigation("Following");
 
-                    b.Navigation("Messages");
-
                     b.Navigation("Posts");
 
-                    b.Navigation("UserGroups");
+                    b.Navigation("UserGroup");
                 });
 
             modelBuilder.Entity("SocialMediaApp.Models.Group", b =>
                 {
                     b.Navigation("Messages");
 
-                    b.Navigation("UserGroups");
+                    b.Navigation("UserGroup");
                 });
 
             modelBuilder.Entity("SocialMediaApp.Models.Post", b =>

@@ -16,7 +16,7 @@ public class Post
     public DateTime Date { get; set; }
 
     //imagine
-    public string Image { get; set; }
+    public string? Image { get; set; }
 
     //video
 

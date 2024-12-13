@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "LEcSj+ZCrqc=",
+  "dgSpecHash": "P4QB2lrVGEo=",
   "success": true,
   "projectFilePath": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp.csproj",
   "expectedPackageFiles": [
+    "/Users/emmamaciuca/.nuget/packages/anglesharp/0.17.1/anglesharp.0.17.1.nupkg.sha512",
+    "/Users/emmamaciuca/.nuget/packages/anglesharp.css/0.17.0/anglesharp.css.0.17.0.nupkg.sha512",
     "/Users/emmamaciuca/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/emmamaciuca/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
+    "/Users/emmamaciuca/.nuget/packages/htmlsanitizer/8.1.870/htmlsanitizer.8.1.870.nupkg.sha512",
     "/Users/emmamaciuca/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
     "/Users/emmamaciuca/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/emmamaciuca/.nuget/packages/humanizer.core.af/2.14.1/humanizer.core.af.2.14.1.nupkg.sha512",
@@ -141,6 +144,7 @@
     "/Users/emmamaciuca/.nuget/packages/sqlitepclraw.core/2.1.6/sqlitepclraw.core.2.1.6.nupkg.sha512",
     "/Users/emmamaciuca/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.6/sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
     "/Users/emmamaciuca/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.6/sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512",
+    "/Users/emmamaciuca/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
     "/Users/emmamaciuca/.nuget/packages/system.codedom/6.0.0/system.codedom.6.0.0.nupkg.sha512",
     "/Users/emmamaciuca/.nuget/packages/system.collections.immutable/8.0.0/system.collections.immutable.8.0.0.nupkg.sha512",
     "/Users/emmamaciuca/.nuget/packages/system.composition/7.0.0/system.composition.7.0.0.nupkg.sha512",
