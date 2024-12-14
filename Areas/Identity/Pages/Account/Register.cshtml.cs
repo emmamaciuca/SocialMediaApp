@@ -80,6 +80,30 @@ namespace SocialMediaApp.Areas.Identity.Pages.Account
             [Display(Name = "Email")]
             public string Email { get; set; }
 
+            //Atribute obligatorii pentru crearea contului
+            // FirstName, LastName, Content, Image 
+            [Required]
+            [Display(Name = "First Name")]
+            public string FirstName { get; set; }
+
+            [Required]
+            [Display(Name = "Last Name")]
+            public string LastName { get; set; }
+
+            [Required]
+            [Display(Name = "Content")]
+            public string Content { get; set; }
+
+            [Required]
+            [Display(Name = "Profile Image")]
+            public IFormFile ImageFile { get; set; }
+
+            [Required]
+            [Display(Name = "Visibility")]
+            public string Visibility { get; set; }
+
+
+
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -114,6 +138,29 @@ namespace SocialMediaApp.Areas.Identity.Pages.Account
             if (ModelState.IsValid)
             {
                 var user = CreateUser();
+
+                //adaugam atributele
+                user.FirstName = Input.FirstName;
+                user.LastName = Input.LastName;
+                user.Content = Input.Content;
+                user.Visibility = Input.Visibility;
+
+                //salvarea imaginii
+                if (Input.ImageFile != null)
+                {
+                    var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
+                    var uniqueFileName = Guid.NewGuid().ToString() + "_" + Input.ImageFile.FileName;
+                    var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await Input.ImageFile.CopyToAsync(fileStream);
+                    }
+
+                    user.Image = "/images/" + uniqueFileName; // Calea relativă
+                }
+                
+
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);

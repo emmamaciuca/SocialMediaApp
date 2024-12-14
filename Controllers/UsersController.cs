@@ -46,10 +46,7 @@ namespace SocialMediaApp.Controllers
             var users = db.Users
                        .Where(user => user.Id != currentUser.Id)
                        .OrderBy(user => user.UserName);
-            // var users = from user in db.Users
-            //             where user.Id != currentUser.Id
-            //             orderby user.UserName
-            //             select user;
+
 
             if (TempData.ContainsKey("message"))
             {
@@ -69,11 +66,14 @@ namespace SocialMediaApp.Controllers
 
 
                 //Cautare dupa nume complet + username
+                // sau cautare dupa nume complet "Nume Prenume"
                 List<string> userIds = db.Users.Where
                                         (
                                          a => a.LastName.Contains(search)
                                          || a.FirstName.Contains(search) 
                                          || a.UserName.Contains(search)
+                                         || (a.LastName + " "+ a.FirstName).Contains(search)
+                                         || (a.FirstName + " "+ a.LastName).Contains(search)
                                          ).Select(a => a.Id).ToList();
 
 
@@ -91,10 +91,16 @@ namespace SocialMediaApp.Controllers
 
 
         // vezi profilul - vizualizat doar daca e public 
+        // daca e public vedem si postarile
         [Authorize(Roles = "User,Editor,Admin")]
         public async Task<ActionResult> Show(string id)
         {
-            ApplicationUser user = db.Users.Find(id);
+            //ApplicationUser user = db.Users.Find(id);
+
+            ApplicationUser user = await db.Users
+                  .Include(u => u.Posts)
+                  .FirstOrDefaultAsync(u => u.Id == id);
+
 
             
             var roles = await _userManager.GetRolesAsync(user);    
@@ -116,7 +122,6 @@ namespace SocialMediaApp.Controllers
 
 
         // un user isi poate edita doar profilul lui
-        // aici trebuie putin de lucru
         [Authorize(Roles = "User,Admin")]
         public async Task<ActionResult> Edit(string id)
         {
@@ -136,17 +141,71 @@ namespace SocialMediaApp.Controllers
 
         // asta merge e ok dar nu salveaza imaginea noua 
         // aici de continua editarea 
+        // [HttpPost]
+        // public async Task<ActionResult> Edit(string id, ApplicationUser newData)
+        // {
+        //     ApplicationUser user = db.Users.Find(id);
+
+        //     var currentUser = await _userManager.GetUserAsync(User);
+        //     ViewBag.UserCurent = currentUser;
+
+
+
+        //     user.AllRoles = GetAllRoles();
+
+
+        //         if (ModelState.IsValid)
+        //         {
+        //             if (user.Id == _userManager.GetUserId(User))
+        //             {
+        //                 user.FirstName = newData.FirstName;
+        //                 user.LastName = newData.LastName;
+        //                 user.UserName = newData.UserName;
+        //                 user.Email = newData.Email;
+                        
+        //                 user.Content = newData.Content;
+
+        //                 // daca vreau sa pun o poza noua de profil nu o salveaza in formular 
+
+        //                 if (!string.IsNullOrEmpty(newData.Image))
+        //                 {
+        //                     user.Image = newData.Image;
+        //                 }    
+        
+        //                 user.Visibility = newData.Visibility;
+        //                 TempData["message"] = "Profilul a fost modificat";
+        //                 TempData["messageType"] = "alert-success";
+        //                 db.SaveChanges();
+
+        //                 // vreau sa se intoarca la show
+        //                 //return RedirectToAction("Index");
+        //                 return RedirectToAction("Show", new { id = user.Id });
+        //             }
+        //             else
+        //             {
+        //                 TempData["message"] = "Nu aveti dreptul sa faceti modificari asupra unui profil care nu va apartine";
+        //                 TempData["messageType"] = "alert-danger";
+        //                 return RedirectToAction("Index");
+        //             }
+
+        //         }
+        //         else
+        //         {
+        //             return View(newData);
+        //         }
+        //     }
+
+
+        //pentru a salva imaginea noua
         [HttpPost]
-        public async Task<ActionResult> Edit(string id, ApplicationUser newData)
+        public async Task<ActionResult> Edit(string id, ApplicationUser newData, IFormFile Image)
         {
             ApplicationUser user = db.Users.Find(id);
 
             var currentUser = await _userManager.GetUserAsync(User);
             ViewBag.UserCurent = currentUser;
 
-
-
-            user.AllRoles = GetAllRoles();
+            //user.AllRoles = GetAllRoles();
 
 
                 if (ModelState.IsValid)
@@ -161,17 +220,40 @@ namespace SocialMediaApp.Controllers
                         user.Content = newData.Content;
 
                         // daca vreau sa pun o poza noua de profil nu o salveaza in formular 
-
-                        if (!string.IsNullOrEmpty(newData.Image))
+                        if (Image != null && Image.Length > 0)
                         {
-                            user.Image = newData.Image;
-                        }    
-        
+                            // Verificăm extensia fișierului
+                            var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+                            var fileExtension = Path.GetExtension(Image.FileName).ToLower();
+                            if (!allowedExtensions.Contains(fileExtension))
+                            {
+                                ModelState.AddModelError("Image", "Fișierul trebuie să fie o imagine (jpg, jpeg, png, gif).");
+                                return View(newData);
+                            }
+
+                            // Salvăm imaginea în wwwroot/images
+                            var fileName = Guid.NewGuid().ToString() + fileExtension; // Nume unic pentru fișier
+                            var storagePath = Path.Combine(_env.WebRootPath, "images", fileName);
+                            var databaseFileName = "/images/" + fileName;
+
+                            // Salvăm fișierul în server
+                            using (var fileStream = new FileStream(storagePath, FileMode.Create))
+                            {
+                                await Image.CopyToAsync(fileStream);
+                            }
+
+                            // Setăm noua imagine pentru utilizator
+                            user.Image = databaseFileName;
+                        }  
+
+                        user.Visibility = newData.Visibility;
+
                         user.Visibility = newData.Visibility;
                         TempData["message"] = "Profilul a fost modificat";
                         TempData["messageType"] = "alert-success";
+
                         db.SaveChanges();
-                        return RedirectToAction("Index");
+                        return RedirectToAction("Show", new { id = user.Id });
                     }
                     else
                     {
@@ -179,80 +261,12 @@ namespace SocialMediaApp.Controllers
                         TempData["messageType"] = "alert-danger";
                         return RedirectToAction("Index");
                     }
-
                 }
                 else
                 {
-                    return View(newData);
+                    return RedirectToAction("Index");
                 }
-            }
-
-
-        //pentru a salva imaginea noua
-        // [HttpPost]
-        // public async Task<ActionResult> Edit(string id, ApplicationUser newData, IFormFile Image)
-        // {
-        //     ApplicationUser user = db.Users.Find(id);
-
-        //     var currentUser = await _userManager.GetUserAsync(User);
-        //     ViewBag.UserCurent = currentUser;
-
-
-
-        //     user.AllRoles = GetAllRoles();
-
-
-        //         if (ModelState.IsValid)
-        //         {
-        //             user.FirstName = newData.FirstName;
-        //             user.LastName = newData.LastName;
-        //             user.UserName = newData.UserName;
-        //             user.Email = newData.Email;
-                    
-        //             user.Content = newData.Content;
-
-        //             // daca vreau sa pun o poza noua de profil nu o salveaza in formular 
-        //             if (Image != null && Image.Length > 0)
-        //             {
-        //                 // Verificăm extensia fișierului
-        //                 var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
-        //                 var fileExtension = Path.GetExtension(Image.FileName).ToLower();
-        //                 if (!allowedExtensions.Contains(fileExtension))
-        //                 {
-        //                     ModelState.AddModelError("Image", "Fișierul trebuie să fie o imagine (jpg, jpeg, png, gif).");
-        //                     return View(newData);
-        //                 }
-
-        //                 // Salvăm imaginea în wwwroot/images
-        //                 var fileName = Guid.NewGuid().ToString() + fileExtension; // Nume unic pentru fișier
-        //                 var storagePath = Path.Combine(_env.WebRootPath, "images", fileName);
-        //                 var databaseFileName = "/images/" + fileName;
-
-        //                 // Salvăm fișierul în server
-        //                 using (var fileStream = new FileStream(storagePath, FileMode.Create))
-        //                 {
-        //                     await Image.CopyToAsync(fileStream);
-        //                 }
-
-        //                 // Setăm noua imagine pentru utilizator
-        //                 user.Image = databaseFileName;
-        //             }
-
-
-        //             // if (!string.IsNullOrEmpty(newData.Image))
-        //             // {
-        //             //     user.Image = newData.Image;
-        //             // }    
-
-                               
-        //             user.Visibility = newData.Visibility;
-
-
-
-        //             db.SaveChanges();
-        //         }
-        //         return RedirectToAction("Index");
-        //     }
+        }
 
 
         // adminul poate sterge conturi

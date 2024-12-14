@@ -2,7 +2,7 @@
 
 
 
-<form asp-controller="Users" asp-action="Edit" method="post" asp-route-id="@Model.Id">
+<form asp-controller="Users" asp-action="Edit" method="post" asp-route-id="@Model.Id" enctype="multipart/form-data">
 
     <div asp-validation-summary="All" class="text-danger"></div>
 
@@ -62,8 +62,8 @@
     <label asp-for="Visibility">Vizibilitate profil</label>
     <br />
     <select asp-for="Visibility" class="form-control">
-        <option value="public">Public</option>
-        <option value="private">Privat</option>
+        <option value="Public">Public</option>
+        <option value="Private">Private</option>
     </select>
     <span asp-validation-for="Visibility" class="text-danger"></span>
     <br />
