@@ -208,6 +208,7 @@ namespace SocialMediaApp.Controllers
 
             //user.AllRoles = GetAllRoles();
 
+                ModelState.Remove("Image");
 
                 if (ModelState.IsValid)
                 {
@@ -220,7 +221,6 @@ namespace SocialMediaApp.Controllers
                         
                         user.Content = newData.Content;
 
-                        // daca vreau sa pun o poza noua de profil nu o salveaza in formular 
                         if (Image != null && Image.Length > 0)
                         {
                             // Verificăm extensia fișierului
@@ -246,10 +246,14 @@ namespace SocialMediaApp.Controllers
                             // Setăm noua imagine pentru utilizator
                             user.Image = databaseFileName;
                         }  
+                        // else
+                        // {
+                        //     user.Image = user.Image; // Păstrează valoarea veche
+                        // }
 
                         user.Visibility = newData.Visibility;
 
-                        user.Visibility = newData.Visibility;
+                        //user.Visibility = newData.Visibility;
                         TempData["message"] = "Profilul a fost modificat";
                         TempData["messageType"] = "alert-success";
 
@@ -265,7 +269,7 @@ namespace SocialMediaApp.Controllers
                 }
                 else
                 {
-                    return RedirectToAction("Index");
+                    return View(newData);
                 }
         }
 

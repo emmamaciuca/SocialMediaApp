@@ -33,7 +33,7 @@ namespace SocialMediaApp.Controllers
         // Buton cu vizualizare - faci parte din grup
 
         [Authorize(Roles = "User,Admin")]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             if (TempData.ContainsKey("message"))
             {
@@ -45,6 +45,10 @@ namespace SocialMediaApp.Controllers
                         select Group;
             
             ViewBag.Groups = groups;
+
+            var currentUser = await _userManager.GetUserAsync(User);
+            ViewBag.UserCurent = currentUser;
+
 
             return View();
         }
@@ -85,7 +89,31 @@ namespace SocialMediaApp.Controllers
             }
         }
 
-        
+        // adminul poate sterge orice grup
+        // utilizatorul doar grupurile create de el
+        [HttpPost]
+        [Authorize(Roles = "User,Admin")]
+        public IActionResult Delete(int id)
+        {
+            Group group = db.Groups.Where(group => group.Id == id)
+                                .First();
+
+            if((group.UserId == _userManager.GetUserId(User))||User.IsInRole("Admin"))
+            {
+                db.Groups.Remove(group);
+                db.SaveChanges();
+                TempData["message"] = "Grupul a fost sters";
+                TempData["messageType"] = "alert-success";
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                TempData["message"] = "Nu aveti dreptul sa stergeti un grup care nu va apartine";
+                TempData["messageType"] = "alert-danger";
+                return RedirectToAction("Index");
+            }
+            
+        }
 
 
     }

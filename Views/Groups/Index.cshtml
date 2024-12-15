@@ -35,6 +35,17 @@
 
                     @* daca utilizatorul NU face parte din grup *@
                     @* buton de join *@
+
+
+                    @* Admin si moderator sterg *@
+                    @if ((string)group.UserId == ViewBag.UserCurent.Id || User.IsInRole("Admin"))
+                    {
+                        <div class="d-flex flex-row justify-content-between p-3">
+                            <form asp-controller="Groups" asp-action="Delete" method="post" asp-route-id="@group.Id">
+                                <button type="submit" class="btn btn-danger">Sterge grup</button>
+                            </form>
+                        </div>
+                    } 
                 </div>
             </div>
         </div>

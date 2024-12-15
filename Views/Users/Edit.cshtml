@@ -23,6 +23,7 @@
     <br /><span asp-validation-for="LastName" class="text-danger"></span>
     <br />
 
+
     <i class="bi-info-circle"></i> 
     <label asp-for="Content">Descriere</label>
     <br />
@@ -35,9 +36,10 @@
     @* Poza de profil *@
     <div class="img-fluid rounded-circle">
         <label asp-for="Image">Poza de profil</label>
-        <input asp-for="Image" class="form-control" type="file" value="/images/default.jpeg" />
+        <input asp-for="Image" class="form-control" type="file"/>
         @* <span asp-validation-for="Image" class="text-danger"></span> *@
     </div>
+
 
     <i class="bi bi-person"></i>
     <label asp-for="UserName">Nume utilizator</label>

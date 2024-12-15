@@ -21,7 +21,6 @@ public class ApplicationUser: IdentityUser
     public string Content { get; set; }
 
     //poza profil
-    //[Required(ErrorMessage = "Poza de profil este obligatorie")]
     public string? Image { get; set; }
 
     [Required(ErrorMessage = "Vizibilitatea este obligatorie")]
