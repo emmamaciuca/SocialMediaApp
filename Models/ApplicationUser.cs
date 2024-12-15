@@ -33,6 +33,9 @@ public class ApplicationUser: IdentityUser
     //un user poate avea mai multe postari
     public virtual ICollection<Post>? Posts { get; set; } 
 
+    public virtual ICollection<Group>? Groups { get; set; }
+
+
     //many-to-many dintre grup si user
     // un user poate avea mai multe grupuri
     public virtual ICollection<UserGroup>? UserGroups { get; set; }

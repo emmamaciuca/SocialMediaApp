@@ -283,7 +283,7 @@ namespace SocialMediaApp.Controllers
             var user = db.Users
                          .Include("Posts")
                          .Include("Comments")
-                         .Include("UserGroups")
+                         .Include("Groups")
                          .Include("Messages")
                          .Where(u => u.Id == id)
                          .First();
@@ -301,11 +301,13 @@ namespace SocialMediaApp.Controllers
 
                 // Delete user groups
                 // ?? oare sterge tot grupul sau doar pe utilizator
-                if (user.UserGroups.Count > 0)
+                // problema aici
+
+                if (user.Groups.Count > 0)
                 {
-                    foreach (var usergroup in user.UserGroups)
+                    foreach (var group in user.Groups)
                     {
-                        db.UserGroups.Remove(usergroup);
+                        db.Groups.Remove(group);
                     }
                 }
 
