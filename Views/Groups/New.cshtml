@@ -1,0 +1,30 @@
+@model SocialMediaApp.Models.Group
+
+<br />
+
+<h2 class= "mb-5 text-center">Adaugare Grup</h2>
+
+<br />
+
+<form asp-action="New" asp-controller="Groups" method="post">
+
+    <label asp-for="Name">Denumire grup</label>
+    <br />
+    <input asp-for="Name" class="form-control" />
+    <span asp-validation-for="Name" class="text-danger"></span>
+    <br />
+    <br />
+
+    <label asp-for="Content">Descriere grup</label>
+    <br />
+    <input asp-for="Content" class="form-control" />
+    <span asp-validation-for="Content" class="text-danger"></span>
+    <br />
+    <br />
+
+
+    <button type="submit" class="btn btn-success">Adauga grup</button>
+
+</form>
+
+

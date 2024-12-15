@@ -39,6 +39,7 @@ namespace SocialMediaApp.Controllers
         // toata lumea poate sa vada utilizatorii
         // inclusiv persoanele neinregistrate 
         [Authorize(Roles = "User,Admin")]
+        //[Authorize] 
         public async Task<IActionResult> Index()
         {
             var currentUser = await _userManager.GetUserAsync(User);

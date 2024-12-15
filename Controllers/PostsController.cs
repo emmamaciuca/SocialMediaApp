@@ -30,6 +30,7 @@ namespace SocialMediaApp.Controllers
         }
 
         [Authorize(Roles = "User,Editor,Admin")]
+        //[Authorize]
         public IActionResult Index()
         {
             var posts = db.Posts.Include("User")

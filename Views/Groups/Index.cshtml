@@ -1,0 +1,43 @@
+<br />
+<br />
+
+@if (TempData["message"] != null)
+{
+    <div class="alert @ViewBag.Alert p-3 rounded-3 text-center mb-5">
+        @ViewBag.Message
+    </div>
+}
+
+<br />
+<a asp-controller="Groups" asp-action="New" class="btn btn-success rounded-pill mb-5">
+    <i class="bi bi-plus"></i> Adăugare grup
+</a>
+
+<div class="row">
+
+    @foreach (var group in ViewBag.Groups)
+    {
+        <div class="col-4 mb-4">
+
+            <div class="card">
+
+                <div class="card-body">
+                    
+                    <h5 class="card-title" name="Name">@group.Name</h5>
+                    <h6 class="card-text" name="Content">@group.Content</h6>
+
+                    <div><i class="bi bi-person"> Creat de: </i> @group.User.UserName</div>
+
+                    <br />
+
+                    @* daca utilizatorul face parte din grup *@
+                    @* <a asp-controller="Bookmarks" asp-action="Show" asp-route-id="@bookmark.Id" class="btn alert-success">Afisare Colectie</a> *@
+
+                    @* daca utilizatorul NU face parte din grup *@
+                    @* buton de join *@
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
