@@ -1,0 +1,71 @@
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="row">
+    <div class="col-6">
+        <h3>Cereri de prietenie</h3>
+        @if (ViewBag.FriendRequests != null && ViewBag.FriendRequests.Count > 0)
+        {
+            @foreach (var request in ViewBag.FriendRequests)
+            {
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <p><strong>@request.Follower.FirstName @request.Follower.LastName</strong> ți-a trimis o cerere de prietenie.</p>
+                        <form method="post" asp-controller="Follows" asp-action="Accept" asp-route-id="@request.Id">
+                            <button type="submit" class="btn btn-success btn-sm">Acceptă</button>
+                        </form>
+                        <form method="post" asp-controller="Follows" asp-action="Reject" asp-route-id="@request.Id" class="d-inline-block">
+                            <button type="submit" class="btn btn-danger btn-sm">Refuză</button>
+                        </form>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>Nu ai cereri de prietenie în așteptare.</p>
+        }
+    </div>
+
+    <div class="col-6">
+        <h3>Followers</h3>
+        @if (ViewBag.Followers != null && ViewBag.Followers.Count > 0)
+        {
+            @foreach (var follower in ViewBag.Followers)
+            {
+                <div class="card mb-3">
+                    <div class="card-body">
+                        
+                        <p><strong>@follower.FirstName @follower.LastName</strong> </p>
+                        
+                          
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>Nu esti urmarit de nimeni momentan.</p>
+        }
+
+        <h3>Following</h3>
+        @if (ViewBag.Following != null && ViewBag.Following.Count > 0)
+        {
+            @foreach (var follow in ViewBag.Following)
+            {
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <p><strong>@follow.FirstName @follow.LastName</strong></p>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>Nu urmărești pe nimeni momentan.</p>
+        }
+    </div>
+</div>

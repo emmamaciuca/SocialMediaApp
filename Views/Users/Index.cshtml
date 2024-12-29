@@ -45,6 +45,7 @@
 
 
                 @* din index se vede doar butonul de vizualizare profil doar daca e public*@
+                @* se vede butonul si daca utilizatorii sunt prieteni *@
                 @if (user.Visibility == "Public" || (ViewBag.UserCurent != null && (string)user.Id == ViewBag.UserCurent.Id))
                 {
                     <div class="d-flex flex-row justify-content-between p-3">
@@ -62,6 +63,53 @@
                         </form>
                     </div>
                 }   
+
+
+                @* daca profilul e privat si utilizatorul curent nu e prieten cu celalat utilizator *@
+                @* follow *@
+                @if (user.Visibility == "Private")
+                {
+                    @*buton cerere   - merge sa faci cererea dar nu se modifica scrisul de pe buton*@
+                    @* nu e ViewBag.FollowStatus in controller si nu intra pe primul if *@
+                    <form method="post" asp-controller="Follows" asp-action="Follow" asp-route-followedId="@user.Id">
+                        @if (ViewBag.FollowStatus != null && ViewBag.FollowStatus.ContainsKey(user.Id))
+                        {
+                            var status = ViewBag.FollowStatus[user.Id];
+                            if (status == "Pending")
+                            {
+                                <button type="button" class="btn btn-warning btn-sm" disabled>Cerere trimisa</button>
+                            }
+                            else if (status == "Accepted")
+                            {
+                                <button type="button" class="btn btn-success btn-sm" disabled>Prieteni</button>
+                            }
+                            else
+                            {
+                                <button type="submit" class="btn btn-primary btn-sm">Follow</button>
+                            }
+                        }
+                        else
+                        {
+                            <button type="submit" class="btn btn-primary btn-sm">Follow</button>
+                        }
+                    </form>
+                }
+                    
+                @*buton cerere    ?????
+                <form method="post" asp-controller="Follows" asp-action="Follow" asp-route-followedId="@user.Id">
+                @if (user.FollowStatus.ContainsKey(user.Id) && Model.FollowStatus[user.Id] == "Friend")
+                {
+                    <button class="btn btn-secondary" disabled>Prieten</button>
+                }
+                else if (Model.FollowStatus.ContainsKey(user.Id) && Model.FollowStatus[user.Id] == "Pending")
+                {
+                    <button class="btn btn-warning" disabled>Cerere trimisa</button>
+                }
+                else
+                {
+                     <button class="btn btn-primary">Follow</button>
+                }
+                </form>*@
                 
 
                 
