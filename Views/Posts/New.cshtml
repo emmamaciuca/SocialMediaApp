@@ -9,9 +9,21 @@
     <div class="row">
         <div class="col-6 offset-3">
 
-            <form method="post" asp-action="New" asp-controller="Posts">
+            <form method="post" asp-action="New" asp-controller="Posts" enctype="multipart/form-data">
 
                 <div asp-validation-summary="All" class="text-danger"></div>
+
+                @* imagine sau video *@
+
+                <div class="form-floating mb-3">
+                    <input asp-for="ImageFile" type="file" class="form-control" />
+                    <label asp-for="ImageFile"></label>
+                    <span asp-validation-for="ImageFile" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Video">URL Video</label>
+                    <input type="url" class="form-control" id="Video" name="Video" value="@Model.Video" placeholder="Introdu URL-ul videoclipului">
+                </div>
 
 
                 <div class="form-group">
@@ -24,7 +36,6 @@
 
                     <br /><br />
                 </div>
-                <!-- adaugare poza -->
                 <br />
                 <button class="btn btn-success" type="submit">Adauga postare</button>
 

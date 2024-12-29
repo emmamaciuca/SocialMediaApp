@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/046f9468-7374-4a39-85ad-6a4773b4308a.jpg",
+      "PackagePath": "staticwebassets/images/046f9468-7374-4a39-85ad-6a4773b4308a.jpg"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/07cfc25d-87a6-4be5-8feb-5dd87420524a_PozaProfil2.jpeg",
+      "PackagePath": "staticwebassets/images/07cfc25d-87a6-4be5-8feb-5dd87420524a_PozaProfil2.jpeg"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/0f1cf7a6-aac8-4830-9019-b2d211c05943.png",
+      "PackagePath": "staticwebassets/images/0f1cf7a6-aac8-4830-9019-b2d211c05943.png"
+    },
+    {
       "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/22bc3101-40a4-4e2b-a449-9f15d6e49a16.png",
       "PackagePath": "staticwebassets/images/22bc3101-40a4-4e2b-a449-9f15d6e49a16.png"
     },
@@ -49,6 +61,10 @@
       "PackagePath": "staticwebassets/images/8b5b9882-be98-447a-8119-f49b4f30cdc3.png"
     },
     {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/8d56d10c-f049-43c3-b1ed-964decbf8ca7_PozaProfil.jpeg",
+      "PackagePath": "staticwebassets/images/8d56d10c-f049-43c3-b1ed-964decbf8ca7_PozaProfil.jpeg"
+    },
+    {
       "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/b8097aa7-5ba9-461f-a9d3-0bb987448f59.jpeg",
       "PackagePath": "staticwebassets/images/b8097aa7-5ba9-461f-a9d3-0bb987448f59.jpeg"
     },
@@ -63,6 +79,10 @@
     {
       "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/e4220b71-0f33-4664-b545-a8aff3316e3c.png",
       "PackagePath": "staticwebassets/images/e4220b71-0f33-4664-b545-a8aff3316e3c.png"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/f1a520e7-6908-471e-a1f0-bb5ac9097f61.png",
+      "PackagePath": "staticwebassets/images/f1a520e7-6908-471e-a1f0-bb5ac9097f61.png"
     },
     {
       "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/fef3c1fd-e75c-438c-8720-7aad054dba9b_PozaProfil3.png",

@@ -16,22 +16,25 @@ namespace SocialMediaApp.Controllers
     {
 
         private readonly ApplicationDbContext db;
+        private readonly IWebHostEnvironment _env;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         public PostsController(
         ApplicationDbContext context,
         UserManager<ApplicationUser> userManager,
-        RoleManager<IdentityRole> roleManager
+        RoleManager<IdentityRole> roleManager,
+        IWebHostEnvironment env
         )
         {
             db = context;
             _userManager = userManager;
             _roleManager = roleManager;
+            _env = env;
         }
 
         [Authorize(Roles = "User,Editor,Admin")]
         //[Authorize]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             var posts = db.Posts.Include("User")
                                 .OrderByDescending(a => a.Date);
@@ -49,7 +52,7 @@ namespace SocialMediaApp.Controllers
         }
         //afisare postare
         [Authorize(Roles = "User,Editor,Admin")]
-        public IActionResult Show(int id)
+        public async Task<IActionResult> Show(int id)
         {
             Post post = db.Posts.Include("User")
                                 .Include("Comments")
@@ -104,7 +107,7 @@ namespace SocialMediaApp.Controllers
         //pentru a pune postarea in baza de date
         [HttpPost]
         [Authorize(Roles = "User,Editor,Admin")]
-        public IActionResult New(Post post)
+        public async Task<IActionResult> New(Post post)
         {
             var sanitizer = new HtmlSanitizer();
 
@@ -116,6 +119,37 @@ namespace SocialMediaApp.Controllers
             if (ModelState.IsValid)
             {
                 post.Content = sanitizer.Sanitize(post.Content);
+
+                //postarea are imagini sau video
+                //salvarea imaginii
+                if (post.ImageFile != null)
+                {
+                    var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
+                    var uniqueFileName = Guid.NewGuid().ToString() + "_" + post.ImageFile.FileName;
+                    var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await post.ImageFile.CopyToAsync(fileStream);
+                        //post.ImageFile.CopyTo(fileStream);
+                    }
+                    post.Image = "/images/" + uniqueFileName; // Calea relativă
+                }
+                //video
+                if (!string.IsNullOrEmpty(post.Video))
+                {
+                    //post.Video = sanitizer.Sanitize(post.Video);
+                    var youtubeBase = "https://www.youtube.com/embed/";
+                    if (post.Video.Contains("watch?v="))
+                    {
+                        var videoId = post.Video.Split("watch?v=")[1].Split('&')[0]; // Extrage ID-ul videoclipului
+                        post.Video = youtubeBase + videoId;
+                    }
+                    else if (post.Video.Contains("youtu.be/"))
+                    {
+                        var videoId = post.Video.Split("youtu.be/")[1].Split('&')[0];
+                        post.Video = youtubeBase + videoId;
+                    }
+                }
 
                 db.Posts.Add(post);
                 db.SaveChanges();
@@ -130,7 +164,7 @@ namespace SocialMediaApp.Controllers
         }
         
         [Authorize(Roles = "User,Editor,Admin")]
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
 
             Post post = db.Posts.Where(post => post.Id == id)
@@ -149,9 +183,10 @@ namespace SocialMediaApp.Controllers
             }
         }
         //pt a edita si in baza de date
+        //nu se pot edita imaginile
         [HttpPost]
         [Authorize(Roles = "User,Editor,Admin")]
-        public IActionResult Edit(int id, Post requestPost)
+        public async Task<IActionResult> Edit(int id, Post requestPost,IFormFile? Image)
         {
             var sanitizer = new HtmlSanitizer();
             Post post = db.Posts.Find(id);
@@ -167,6 +202,44 @@ namespace SocialMediaApp.Controllers
                     post.Content = requestPost.Content;
 
                     //post.Image = requestPost.Image;
+
+                    if (Image != null && Image.Length > 0)
+                    {
+                        // Verificăm extensia fișierului
+                        var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+                        var fileExtension = Path.GetExtension(Image.FileName).ToLower();
+                        if (!allowedExtensions.Contains(fileExtension))
+                        {
+                            ModelState.AddModelError("Image", "Fișierul trebuie să fie o imagine (jpg, jpeg, png, gif).");
+                            return View(requestPost);
+                        }
+                        // Salvăm imaginea în wwwroot/images
+                        var fileName = Guid.NewGuid().ToString() + fileExtension; // Nume unic pentru fișier
+                        var storagePath = Path.Combine(_env.WebRootPath, "images", fileName);
+                        var databaseFileName = "/images/" + fileName;
+                        // Salvăm fișierul în server
+                        using (var fileStream = new FileStream(storagePath, FileMode.Create))
+                        {
+                            await Image.CopyToAsync(fileStream);
+                        }
+                        // Setăm noua imagine pentru utilizator
+                        post.Image = databaseFileName;
+                    }
+                    //post.Video = sanitizer.Sanitize(requestPost.Video);
+                    if (!string.IsNullOrEmpty(post.Video))
+                    {
+                        var youtubeBase = "https://www.youtube.com/embed/";
+                        if (post.Video.Contains("watch?v="))
+                        {
+                            var videoId = post.Video.Split("watch?v=")[1].Split('&')[0]; // Extrage ID-ul videoclipului
+                            post.Video = youtubeBase + videoId;
+                        }
+                        else if (post.Video.Contains("youtu.be/"))
+                        {
+                            var videoId = post.Video.Split("youtu.be/")[1].Split('&')[0];
+                            post.Video = youtubeBase + videoId;
+                        }
+                    }
 
                     post.Date = DateTime.Now;
                     

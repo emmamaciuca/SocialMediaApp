@@ -17,8 +17,27 @@
 
     <div class="card-body">
 
-        <div class="card-text">@Html.Raw(Model.Content)</div>
-        <!-- poze -->
+        @if (!string.IsNullOrEmpty(@Model.Image))
+        {
+            <img src="@Model.Image" alt="Poza postare" class="img-fluid" style="width: 300px; height: 300px;">
+        }
+        
+        <br />
+        
+        @if (!string.IsNullOrEmpty(Model.Video))
+        {
+            <div class="video-container">
+                <iframe width="560" height="315"
+                        src="@Model.Video"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+            </div>
+        }
+
+        <div class="card-text">@Model.Content</div>
+
 
 
         <div class="d-flex justify-content-between flex-row mt-5">
