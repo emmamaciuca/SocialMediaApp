@@ -1,0 +1,21 @@
+@model SocialMediaApp.Models.Message
+
+
+<h2>Editare mesaj</h2>
+<br />
+
+
+<form asp-action="Edit" asp-controller="Messages" asp-route-id="@Model.Id" method="post">
+
+    <div class="form-group">
+        <label asp-for="Content" class="form-label">Conținut mesaj</label>
+        <br />
+        <textarea asp-for="Content" class="form-control"></textarea>
+        <span asp-validation-for="Content" class="text-danger"></span>
+    </div>
+
+    <br /><br />
+
+    <button class="btn btn-primary" type="submit">Editează mesajul</button>
+
+</form>

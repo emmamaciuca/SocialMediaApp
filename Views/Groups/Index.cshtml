@@ -31,10 +31,10 @@
                     <br />
 
                     @* daca utilizatorul face parte din grup sau e moderator *@
-                    @if(ViewBag.UserGroupsId.Contains(group.Id) || group.UserId == ViewBag.UserCurent.Id)
+                    @if(ViewBag.UserGroupsId.Contains(group.Id) || group.UserId == ViewBag.UserCurent.Id || User.IsInRole("Admin"))
                     {
                         @* <a asp-controller="Groups" asp-action="Show" asp-route-id="@group.Id" class="btn alert-success">Afisare Grup</a> *@
-                        <form asp-controller="Groups" asp-action="Show" asp-route-id="@group.Id">
+                        <form asp-controller="Groups" asp-action="Show" asp-route-id="@group.Id" method="get">
                             <button type="submit" class="btn btn-success">Afisare Grup</button>
                         </form>
                         <br/>
@@ -46,6 +46,7 @@
                         <form asp-controller="Groups" asp-action="Join" method="post" asp-route-id="@group.Id">
                             <button type="submit" class="btn btn-primary">Join Grup</button>
                         </form>
+                        <br/>
                     }
 
 

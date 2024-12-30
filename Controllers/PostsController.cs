@@ -96,6 +96,9 @@ namespace SocialMediaApp.Controllers
                 return View(post);
             }
         }
+
+
+        
         //pagina postare noua
         [Authorize(Roles = "User,Editor,Admin")]
         public IActionResult New()

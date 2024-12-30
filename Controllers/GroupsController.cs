@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AspNetCoreGeneratedDocument;
+using System.Runtime.CompilerServices;
 
 namespace SocialMediaApp.Controllers
 {
@@ -188,14 +189,13 @@ namespace SocialMediaApp.Controllers
         //daca esti moderator la fiecare persoana ai buton de elimina 
         //daca esti utilizator ai buton de iesire grup
 
-        public async Task<IActionResult> Show (int id)
+        public async Task<IActionResult> Show(int id)
         {
-            // var group = db.Groups.Include("UserGroups.User")
-            //                      .FirstOrDefault(g => g.Id == id);
             
             var group = db.Groups.Include(g => g.User)  // Include moderatorul grupului
                                  .Include(g => g.UserGroups)
                                  .ThenInclude(ug => ug.User)  // Include membrii grupului
+                                 .Include(g => g.Messages)
                                  .FirstOrDefault(g => g.Id == id);
 
                      
@@ -226,6 +226,59 @@ namespace SocialMediaApp.Controllers
 
             return View(group);
         }
+
+
+        //afisare mesaje
+        [HttpPost]
+        [Authorize(Roles = "User,Admin")]
+        public async Task<IActionResult> Show([FromForm] Message message)
+        {
+            message.Date = DateTime.Now;
+
+            // preluam Id-ul utilizatorului care posteaza mesajul
+            message.UserId = _userManager.GetUserId(User);
+
+            if (ModelState.IsValid)
+            {
+                db.Messages.Add(message);
+                db.SaveChanges();   //aici se adauga comentariul in baza de date
+                return Redirect("/Groups/Show/" + message.GroupId);
+            }
+            else
+            {  
+                var group = db.Groups.Include(g => g.User)  // Include moderatorul grupului
+                                 .Include(g => g.UserGroups)
+                                 .ThenInclude(ug => ug.User)  // Include membrii grupului
+                                 .Include(g => g.Messages)
+                                 .FirstOrDefault(g => g.Id == message.GroupId);
+
+                if(group == null)
+                {
+                    TempData["message"] = "Grupul nu a fost gasit";
+                    TempData["messageType"] = "alert-danger";
+                    return RedirectToAction("Index");
+                }
+
+                var currentUser = await _userManager.GetUserAsync(User);
+                ViewBag.UserCurent = currentUser;
+
+                //cererile active
+                var requests = db.UserGroups.Include( u => u.User)
+                                            .Where(u => u.GroupId == message.GroupId && u.Status == "Pending")
+                                            .ToList();
+                ViewBag.Requests = requests;
+
+                //membrii grupului
+                var members = db.UserGroups.Include(u => u.User) // Include User pentru a avea informațiile despre utilizatori
+                                            .Where(u => u.GroupId == message.GroupId && u.Status == "Accepted")
+                                            .Select(u => u.User) // Extragem doar utilizatorii
+                                            .ToList();
+                ViewBag.Members = members;
+
+                return View(group);
+            }
+        }
+
 
 
         //metoda de parasire a grupului
@@ -295,7 +348,8 @@ namespace SocialMediaApp.Controllers
         [Authorize(Roles = "User,Admin")]
         public IActionResult Delete(int id)
         {
-            Group group = db.Groups.Where(group => group.Id == id)
+            Group group = db.Groups.Include("Messages")
+                                .Where(group => group.Id == id)
                                 .First();
 
             if((group.UserId == _userManager.GetUserId(User))||User.IsInRole("Admin"))

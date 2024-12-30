@@ -78,3 +78,94 @@
 </table>
 
 <h3>Mesaje</h3>
+@* Afisare mesaje impreuna cu butoanele de editare si stergere *@
+
+@foreach (var message in Model.Messages)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+
+            <div class="col-md-8">
+
+                <div>
+
+                    <p>@message.Content</p>
+                    <small>@message.Date</small>
+                    <strong><i class="bi bi-person"> @message.User.UserName</i></strong>
+
+                </div>
+                <br>
+
+                <div class="d-flex">
+                @if (message.UserId == ViewBag.UserCurent.Id)
+                {
+                    <div>
+                        <a class="btn btn-outline-primary" asp-controller="Messages" asp-action="Edit" asp-route-id="@message.Id">
+                            <i class="bi bi-pencil-square"></i> Editeaza
+                        </a>
+                    </div>
+                }
+                @if (message.UserId == ViewBag.UserCurent.Id || User.IsInRole("Admin"))
+                {
+                    <div>
+                        <form method="post" asp-controller="Messages" asp-action="Delete" asp-route-id="@message.Id">
+                            <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i>Sterge</button
+                        </form>
+                    </div>
+                }
+                </div>
+                
+
+                <br />
+            </div>
+
+            <div class="col-md-2"></div>
+
+        </div>
+
+    </div>
+}
+
+
+@* Afisarea formularului in care se poate adauga un mesaj *@
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8">
+
+            <div class="card">
+
+                <form method="post" asp-controller="Groups" asp-action="Show">
+
+                    <div class="card-body">
+
+                        <input type="hidden" name="GroupId" value="@Model.Id" />
+
+                        <label>Continut mesaj</label>
+                        <br />
+
+                        <textarea class="form-control" name="Content"></textarea>
+
+                        <span asp-validation-for="Content" class="text-danger"></span>
+                        <br /><br />
+
+                        <button class="btn btn-success" type="submit">Adauga mesaj</button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-2"></div>
+
+    </div>
+
+</div>
