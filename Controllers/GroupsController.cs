@@ -28,6 +28,97 @@ namespace SocialMediaApp.Controllers
 
         //metode
 
+        //metoda join group 
+        //in index exista buton cu join daca nu faci deja parte din grup/ nu esti moderatorul grupului
+        [HttpPost]
+        [Authorize(Roles = "User, Admin")]
+        public async Task<IActionResult> Join(int id)
+        {
+
+            var currentUser = await _userManager.GetUserAsync(User);
+            ViewBag.UserCurent = currentUser;
+
+            var currentUserId = currentUser.Id;
+
+            //daca exista deja cerere sau e membru
+            var existingJoin = db.UserGroups.FirstOrDefault(u => u.GroupId == id && u.UserId == currentUserId);
+
+            //daca nu exista se creeaza o noua cerere
+            if(existingJoin == null)
+            {
+                var userGroup = new UserGroup
+                {
+                    UserId = currentUserId,
+                    GroupId = id,
+                    Status = "Pending"
+                };
+
+                db.UserGroups.Add(userGroup);
+                db.SaveChanges();
+                TempData["message"] = "Cererea a fost trimisa";
+                TempData["messageType"] = "alert-success";
+            }
+            else
+            {
+                TempData["message"] = "Cererea exista deja";
+                TempData["messageType"] = "alert-danger";
+            }
+
+            return RedirectToAction("Index");
+        }
+
+        //metoda accept join - pentru moderator sa accepte cererile de join
+        [HttpPost]
+        public IActionResult AcceptJoin (int userGroupId)
+        {
+            var currentUserId = _userManager.GetUserId(User);
+            var userGroup = db.UserGroups.Include(u => u.Group)
+                                          .FirstOrDefault(u => u.Id == userGroupId);
+
+            //daca exista cerera si utiliztorul curent este moderatorul 
+            if(userGroup != null && userGroup.Group != null && userGroup.Group.UserId == currentUserId)
+            {
+                userGroup.Status = "Accepted";
+                db.SaveChanges();
+                TempData["message"] = "Cererea a fost acceptata";
+                TempData["messageType"] = "alert-success";
+            }
+            else
+            {
+                TempData["message"] = "Nu puteti accepta cererea";
+                TempData["messageType"] = "alert-danger";
+            }
+
+            return RedirectToAction("Show", new {id = userGroup.GroupId});
+            
+        }
+
+        //metoda reject join - pentru moderator sa respinga cererile de join
+        [HttpPost]
+        public IActionResult RejectJoin (int userGroupId)
+        {
+            var currentUserId = _userManager.GetUserId(User);
+            var userGroup = db.UserGroups.Include(u => u.Group)
+                                         .FirstOrDefault(u => u.Id == userGroupId);
+
+            //daca exista cerera si utiliztorul curent este moderatorul 
+            if(userGroup != null && userGroup.Group != null && userGroup.Group.UserId == currentUserId)
+            {
+                db.UserGroups.Remove(userGroup);                
+                db.SaveChanges();
+                TempData["message"] = "Cererea a fost respinsa";
+                TempData["messageType"] = "alert-danger";
+            }
+            else
+            {
+                TempData["message"] = "Nu puteti respinge cererea";
+                TempData["messageType"] = "alert-danger";
+            }
+
+            return RedirectToAction("Show", new {id = userGroup.GroupId});
+        }
+
+
         //Toti utilizatorii pot vedea toate grupurile existente 
         // Buton cu join - nu faci parte din grup
         // Buton cu vizualizare - faci parte din grup
@@ -49,15 +140,16 @@ namespace SocialMediaApp.Controllers
             var currentUser = await _userManager.GetUserAsync(User);
             ViewBag.UserCurent = currentUser;
 
+            
+            //grupurile in care utilizatorul e membru
+            var userGroupsId = db.UserGroups.Where(u => u.UserId == currentUser.Id && u.Status == "Accepted")
+                                            .Select(u => u.GroupId)
+                                            .ToList();
+
+            ViewBag.UserGroupsId = userGroupsId;
 
             return View();
         }
-
-        //Afisarea grupului cu tot cu mesaje 
-        // daca faci parte din grup
-
-
-
 
 
         //formularul in care se completeaza datele unui nou grup
@@ -87,6 +179,114 @@ namespace SocialMediaApp.Controllers
             {
                 return View(gr);
             }
+        }
+
+
+        //metoda show group
+        //fiecare caseta de grup are buton de see group - daca esti moderator sau faci deja parte din grup
+        //aici se vad toate persoanele din grup 
+        //daca esti moderator la fiecare persoana ai buton de elimina 
+        //daca esti utilizator ai buton de iesire grup
+
+        public async Task<IActionResult> Show (int id)
+        {
+            // var group = db.Groups.Include("UserGroups.User")
+            //                      .FirstOrDefault(g => g.Id == id);
+            
+            var group = db.Groups.Include(g => g.User)  // Include moderatorul grupului
+                                 .Include(g => g.UserGroups)
+                                 .ThenInclude(ug => ug.User)  // Include membrii grupului
+                                 .FirstOrDefault(g => g.Id == id);
+
+                     
+            if(group == null)
+            {
+                TempData["message"] = "Grupul nu a fost gasit";
+                TempData["messageType"] = "alert-danger";
+                return RedirectToAction("Index");
+            }
+
+            var currentUser = await _userManager.GetUserAsync(User);
+            ViewBag.UserCurent = currentUser;
+
+            //cererile active
+            var requests = db.UserGroups.Include( u => u.User)
+                                        .Where(u => u.GroupId == id && u.Status == "Pending")
+                                        .ToList();
+            ViewBag.Requests = requests;
+
+            //membrii grupului
+            var members = db.UserGroups.Include(u => u.User) // Include User pentru a avea informațiile despre utilizatori
+                                        .Where(u => u.GroupId == id && u.Status == "Accepted")
+                                        .Select(u => u.User) // Extragem doar utilizatorii
+                                        .ToList();
+            ViewBag.Members = members;
+
+
+
+            return View(group);
+        }
+
+
+        //metoda de parasire a grupului
+        [HttpPost]
+        public async Task<IActionResult> Leave(int groupId)
+        {
+            var currentUser = await _userManager.GetUserAsync(User);
+            ViewBag.UserCurent = currentUser;
+            
+            var userGroup = db.UserGroups.FirstOrDefault(u => u.UserId == currentUser.Id && u.GroupId == groupId);
+
+            //se sterge cerera din userGroups
+            if(userGroup != null)
+            {
+                db.UserGroups.Remove(userGroup);
+                db.SaveChanges();
+                TempData["Message"] = "Ai părăsit grupul";
+                TempData["messageType"] = "alert-danger";
+            }
+            else
+            {
+                TempData["Message"] = "Nu esti membru al acestui grup";
+                TempData["messageType"] = "alert-danger";
+            }
+
+            return RedirectToAction("Index", "Groups");
+        }
+
+        //metoda pentru eliminarea unui membru de catre moderator
+        [HttpPost]
+        public async Task<IActionResult> Remove(string userId,int groupId)
+        {
+            var currentUser = await _userManager.GetUserAsync(User);
+            ViewBag.UserCurent = currentUser;
+
+            var userGroup = db.UserGroups.FirstOrDefault(u => u.UserId == userId && u.GroupId == groupId);
+            if(userGroup != null)
+            {
+                //daca utilizatorul curent e moderator
+                var group = db.Groups.FirstOrDefault(g => g.Id == userGroup.GroupId);
+
+                if(group != null && group.UserId == currentUser.Id)
+                {
+                    db.UserGroups.Remove(userGroup);
+                    db.SaveChanges();
+                    TempData["Message"] = "Utilizatorul a fost eliminat din grup";
+                    TempData["messageType"] = "alert-danger";
+                }
+                else
+                {
+                    TempData["Message"] = "Nu poti elimina utilizatorul din grup";
+                    TempData["messageType"] = "alert-danger";
+                }
+            }
+            else
+            {
+                TempData["Message"] = "Utilizatorul nu este in grup";
+                TempData["messageType"] = "alert-danger";
+            }
+
+            return RedirectToAction("Show", "Groups",new{id = userGroup.GroupId});
         }
 
         // adminul poate sterge orice grup

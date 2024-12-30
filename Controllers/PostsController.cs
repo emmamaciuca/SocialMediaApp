@@ -68,6 +68,7 @@ namespace SocialMediaApp.Controllers
             
             return View(post);
         }
+        
         //afisare parte comentarii
         [HttpPost]
         [Authorize(Roles = "User,Editor,Admin")]

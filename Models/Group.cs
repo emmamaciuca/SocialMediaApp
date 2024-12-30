@@ -17,6 +17,7 @@ public class Group
     [Required(ErrorMessage = "Descrierea grupului este obligatoriu")]
     public string Content { get; set; }
 
+
     //grupul e creat de un user - moderator
     public string? UserId { get; set; }
     public virtual ApplicationUser? User { get; set; }

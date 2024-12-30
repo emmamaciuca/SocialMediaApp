@@ -30,21 +30,40 @@
 
                     <br />
 
-                    @* daca utilizatorul face parte din grup *@
-                    @* <a asp-controller="Bookmarks" asp-action="Show" asp-route-id="@bookmark.Id" class="btn alert-success">Afisare Colectie</a> *@
+                    @* daca utilizatorul face parte din grup sau e moderator *@
+                    @if(ViewBag.UserGroupsId.Contains(group.Id) || group.UserId == ViewBag.UserCurent.Id)
+                    {
+                        @* <a asp-controller="Groups" asp-action="Show" asp-route-id="@group.Id" class="btn alert-success">Afisare Grup</a> *@
+                        <form asp-controller="Groups" asp-action="Show" asp-route-id="@group.Id">
+                            <button type="submit" class="btn btn-success">Afisare Grup</button>
+                        </form>
+                        <br/>
+                    }
+                    else
+                    {
+                        @* daca utilizatorul nu face parte din grup/ nu a fost acceptat inca *@
+                        @* <a asp-controller="Groups" asp-action="Show" asp-route-id="@group.Id" class="btn alert-success">Afisare Grup</a> *@
+                        <form asp-controller="Groups" asp-action="Join" method="post" asp-route-id="@group.Id">
+                            <button type="submit" class="btn btn-primary">Join Grup</button>
+                        </form>
+                    }
 
-                    @* daca utilizatorul NU face parte din grup *@
+
+
+                    @* daca utilizatorul NU face parte din grup sau nu a fost acceptat inca *@
                     @* buton de join *@
+                    @* @if(!ViewBag.UserGroups.Any(u => u.GroupId == group.Id))
+                    {
+
+                    } *@
 
 
-                    @* Admin si moderator sterg *@
+                    @* Admin si moderator sterg grupul*@
                     @if ((string)group.UserId == ViewBag.UserCurent.Id || User.IsInRole("Admin"))
                     {
-                        <div class="d-flex flex-row justify-content-between p-3">
-                            <form asp-controller="Groups" asp-action="Delete" method="post" asp-route-id="@group.Id">
-                                <button type="submit" class="btn btn-danger">Sterge grup</button>
-                            </form>
-                        </div>
+                        <form asp-controller="Groups" asp-action="Delete" method="post" asp-route-id="@group.Id">
+                            <button type="submit" class="btn btn-danger">Sterge grup</button>
+                        </form>
                     } 
                 </div>
             </div>

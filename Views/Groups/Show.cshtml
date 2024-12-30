@@ -1,0 +1,80 @@
+@model SocialMediaApp.Models.Group
+
+<h2>@Model.Name</h2>
+<p>@Model.Content</p>
+
+@* buton de parasire grup *@
+@* daca utilizatorul curent nu e moderator *@
+@if(Model.User != null && (string)Model.UserId != ViewBag.UserCurent.Id)
+{
+    <form asp-action="Leave" asp-controller="Groups" method="post" asp-route-groupId="@Model.Id">
+        <button type="submit" class="btn btn-warning">Părăsește grupul</button>
+    </form>
+}
+
+@* moderatorul accepta/respinge cererile active*@
+@if(Model.User != null && (string)Model.UserId == ViewBag.UserCurent.Id)
+{
+    @* Aici pot schimba formatul sa nu fie tabel *@
+    <h3>Cereri de alăturare</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Utilizator</th>
+                <th>Acțiuni</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var request in ViewBag.Requests)
+            {
+                <tr>
+                    <td>@request.User.UserName</td>
+                    <td>
+                        <form asp-action="AcceptJoin" asp-controller="Groups" method="post" asp-route-userGroupId="@request.Id">
+                            <button type="submit" class="btn btn-success">Accept</button>
+                        </form>
+                        <br/>
+                        <form asp-action="RejectJoin" asp-controller="Groups" method="post" asp-route-userGroupId="@request.Id">
+                            <button type="submit" class="btn btn-danger">Reject</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@* informatii despre grup pe care le vede toata lumea *@
+@* persoanele din grup si mesajele *@
+<h3>Membrii grupului</h3>
+<table class="table">
+    @* <thead>
+        <tr>
+            <th>Membrii grupului</th>
+        </tr>
+    </thead> *@
+    <tbody>
+        <tr>
+            <td>@Model.User.FirstName @Model.User.LastName</td>
+        </tr>
+        @foreach (var member in ViewBag.Members)
+        {
+            <tr>
+                <td>@member.FirstName @member.LastName</td>
+                @if(Model.User != null && (string)Model.UserId == ViewBag.UserCurent.Id)
+                {
+                    <td>
+                        <form asp-action="Remove" asp-controller="Groups" method="post">
+                            <input type="hidden" name="userId" value="@member.Id">
+                            <input type="hidden" name="groupId" value="@Model.Id">
+                            <button type="submit" class="btn btn-warning">Elimina utilizatorul</button>
+                        </form>
+                    </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3>Mesaje</h3>
