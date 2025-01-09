@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JT73HueqFYrfrfMHSwy7BZc5/Moa6UtElNqATgH6QWc=",
+  "Hash": "1/c8nbLgtvJofqzEb3gkcsw+BvVT4ez0ILuQ8cdyank=",
   "Source": "SocialMediaApp",
   "BasePath": "_content/SocialMediaApp",
   "Mode": "Default",
@@ -1440,6 +1440,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/7ba56810-7c45-4f60-b7fc-55a1956b41e3.png"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/7e7622db-38cf-4b36-8469-9963269e850c.png",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/7e7622db-38cf-4b36-8469-9963269e850c.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/7e7622db-38cf-4b36-8469-9963269e850c.png"
     },
     {
       "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/8b5b9882-be98-447a-8119-f49b4f30cdc3.png",

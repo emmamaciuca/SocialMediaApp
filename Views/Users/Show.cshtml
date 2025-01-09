@@ -49,7 +49,8 @@
 <br />
 
 
-
+@* Postarile utilizatorului *@
+@* Poti vedea postarea direct din profilul lui *@
 <div>
     <h3>Postari</h3>
     @if (Model.Posts != null && Model.Posts.Any())
@@ -85,6 +86,10 @@
 
                 </div>
             </div>
+
+            @* Buton care duce la postare *@
+            <a class="btn btn-success" asp-controller="Posts" asp-action="Show" asp-route-id="@post.Id">Afisare postare</a>
+
             </div>
             <br />
 

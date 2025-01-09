@@ -32,7 +32,7 @@ namespace SocialMediaApp.Controllers
             _env = env;
         }
 
-        [Authorize(Roles = "User,Editor,Admin")]
+        [Authorize(Roles = "User,Admin")]
         //[Authorize]
         public async Task<IActionResult> Index()
         {
@@ -51,7 +51,7 @@ namespace SocialMediaApp.Controllers
             return View();
         }
         //afisare postare
-        [Authorize(Roles = "User,Editor,Admin")]
+        [Authorize(Roles = "User,Admin")]
         public async Task<IActionResult> Show(int id)
         {
             Post post = db.Posts.Include("User")
@@ -71,7 +71,7 @@ namespace SocialMediaApp.Controllers
         
         //afisare parte comentarii
         [HttpPost]
-        [Authorize(Roles = "User,Editor,Admin")]
+        [Authorize(Roles = "User,Admin")]
         public IActionResult Show([FromForm] Comment comment)
         {
             comment.Date = DateTime.Now;
@@ -100,7 +100,7 @@ namespace SocialMediaApp.Controllers
 
         
         //pagina postare noua
-        [Authorize(Roles = "User,Editor,Admin")]
+        [Authorize(Roles = "User,Admin")]
         public IActionResult New()
         {
             Post post = new Post();
@@ -110,7 +110,7 @@ namespace SocialMediaApp.Controllers
 
         //pentru a pune postarea in baza de date
         [HttpPost]
-        [Authorize(Roles = "User,Editor,Admin")]
+        [Authorize(Roles = "User,Admin")]
         public async Task<IActionResult> New(Post post)
         {
             var sanitizer = new HtmlSanitizer();
@@ -167,15 +167,14 @@ namespace SocialMediaApp.Controllers
             }
         }
         
-        [Authorize(Roles = "User,Editor,Admin")]
+        [Authorize(Roles = "User,Admin")]
         public async Task<IActionResult> Edit(int id)
         {
 
             Post post = db.Posts.Where(post => post.Id == id)
                                 .First();
 
-            if ((post.UserId == _userManager.GetUserId(User)) ||
-                User.IsInRole("Admin"))
+            if (post.UserId == _userManager.GetUserId(User)) //|| User.IsInRole("Admin"))
             {
                 return View(post);
             }
@@ -189,7 +188,7 @@ namespace SocialMediaApp.Controllers
         //pt a edita si in baza de date
         //nu se pot edita imaginile
         [HttpPost]
-        [Authorize(Roles = "User,Editor,Admin")]
+        [Authorize(Roles = "User,Admin")]
         public async Task<IActionResult> Edit(int id, Post requestPost,IFormFile? Image)
         {
             var sanitizer = new HtmlSanitizer();
@@ -197,8 +196,7 @@ namespace SocialMediaApp.Controllers
 
             if (ModelState.IsValid)
             {
-                if ((post.UserId == _userManager.GetUserId(User))
-                    || User.IsInRole("Admin"))
+                if (post.UserId == _userManager.GetUserId(User)) //|| User.IsInRole("Admin"))
                 {
                     
                     requestPost.Content = sanitizer.Sanitize(requestPost.Content);
@@ -266,7 +264,7 @@ namespace SocialMediaApp.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "User,Editor,Admin")]
+        [Authorize(Roles = "User,Admin")]
         public ActionResult Delete(int id)
         {
             Post post = db.Posts.Include("Comments")

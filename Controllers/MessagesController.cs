@@ -47,7 +47,7 @@ namespace SocialMediaApp.Controllers
             }
         }
 
-        [Authorize(Roles = "User,Editor,Admin")]
+        [Authorize(Roles = "User,Admin")]
         public IActionResult Edit(int id)
         {
             Message message = db.Messages.Find(id);
@@ -64,7 +64,7 @@ namespace SocialMediaApp.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "User,Editor,Admin")]
+        [Authorize(Roles = "User,Admin")]
         public IActionResult Edit(int id, Message requestMessage)
         {
             Message message = db.Messages.Find(id);

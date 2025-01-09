@@ -50,24 +50,21 @@
 
     </div>
 
-    @if ((ViewBag.AfisareButoane == true && Model.UserId == ViewBag.UserCurent)
-    || ViewBag.EsteAdmin == true)
-    {
-        <div class="d-flex flex-row justify-content-between">
 
+    @* Admin poate sa isi editeze acum doar propriul profil *@
+    <div class="d-flex flex-row justify-content-between">
+        @if(Model.UserId == ViewBag.UserCurent)
+        {
             <a class="btn btn-success" asp-controller="Posts" asp-action="Edit" asp-route-id="@Model.Id">Editeaza postare</a>
+        }
 
+        @if ((ViewBag.AfisareButoane == true && Model.UserId == ViewBag.UserCurent) || ViewBag.EsteAdmin == true)
+        {
             <form method="post" asp-controller="Posts" asp-action="Delete" asp-route-id="@Model.Id">
-
                 <button class="btn btn-danger" type="submit">Sterge postare</button>
-
             </form>
-
-        </div>
-    }
-
-    
-
+        }
+    </div>
 </div>
 
 <br />
@@ -92,15 +89,18 @@
                 </div>
                 <br>
 
-                @if (comm.UserId == ViewBag.UserCurent || ViewBag.EsteAdmin == true)
-                {
-                    <div class="d-flex">
+                @* Admin editeaza doar propriile comentarii *@
+                <div class="d-flex">
+                    @if (comm.UserId == ViewBag.UserCurent)
+                    {
                         <div>
                             <a class="btn btn-outline-primary" asp-controller="Comments" asp-action="Edit" asp-route-id="@comm.Id">
                                 <i class="bi bi-pencil-square"></i> Editeaza
                             </a>
-
                         </div>
+                    }
+                    @if (comm.UserId == ViewBag.UserCurent || ViewBag.EsteAdmin == true)
+                    {
                         <div>
                             <form method="post" asp-controller="Comments" asp-action="Delete" asp-route-id="@comm.Id">
 
@@ -108,8 +108,8 @@
 
                             </form>
                         </div>
-                    </div>
-                }
+                    }
+                </div>
 
                 <br />
             </div>

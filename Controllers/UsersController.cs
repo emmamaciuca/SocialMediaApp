@@ -93,7 +93,7 @@ namespace SocialMediaApp.Controllers
 
         // vezi profilul - vizualizat doar daca e public 
         // daca e public vedem si postarile
-        [Authorize(Roles = "User,Editor,Admin")]
+        [Authorize(Roles = "User,Admin")]
         public async Task<ActionResult> Show(string id)
         {
             //ApplicationUser user = db.Users.Find(id);

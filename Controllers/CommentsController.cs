@@ -30,7 +30,7 @@ namespace SocialMediaApp.Controllers
         // acel comentariu a fost postat de catre acestia
 
         [HttpPost]
-        [Authorize(Roles = "User,Editor,Admin")]
+        [Authorize(Roles = "User,Admin")]
         public IActionResult Delete(int id)
         {
             Comment comm = db.Comments.Find(id);
@@ -56,7 +56,7 @@ namespace SocialMediaApp.Controllers
         // Se poate edita un comentariu doar de catre utilizatorul care a postat comentariul respectiv 
         // Adminii pot edita orice comentariu, chiar daca nu a fost postat de ei
 
-        [Authorize(Roles = "User,Editor,Admin")]
+        [Authorize(Roles = "User,Admin")]
         public IActionResult Edit(int id)
         {
             Comment comm = db.Comments.Find(id);
@@ -74,7 +74,7 @@ namespace SocialMediaApp.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "User,Editor,Admin")]
+        [Authorize(Roles = "User,Admin")]
         public IActionResult Edit(int id, Comment requestComment)
         {
             Comment comm = db.Comments.Find(id);
