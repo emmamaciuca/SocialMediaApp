@@ -64,7 +64,7 @@ namespace SocialMediaApp.Controllers
                 ViewBag.Alert = TempData["messageType"];
             }
 
-            //afisare paginata
+
             return View();
         }
         //afisare postare
@@ -203,7 +203,7 @@ namespace SocialMediaApp.Controllers
             }
         }
         //pt a edita si in baza de date
-        //nu se pot edita imaginile
+        //se modifica si video acum
         [HttpPost]
         [Authorize(Roles = "User,Admin")]
         public async Task<IActionResult> Edit(int id, Post requestPost,IFormFile? Image)
@@ -245,17 +245,17 @@ namespace SocialMediaApp.Controllers
                         post.Image = databaseFileName;
                     }
                     //post.Video = sanitizer.Sanitize(requestPost.Video);
-                    if (!string.IsNullOrEmpty(post.Video))
+                    if (!string.IsNullOrEmpty(requestPost.Video))
                     {
                         var youtubeBase = "https://www.youtube.com/embed/";
-                        if (post.Video.Contains("watch?v="))
+                        if (requestPost.Video.Contains("watch?v="))
                         {
-                            var videoId = post.Video.Split("watch?v=")[1].Split('&')[0]; // Extrage ID-ul videoclipului
+                            var videoId = requestPost.Video.Split("watch?v=")[1].Split('&')[0]; // Extrage ID-ul videoclipului
                             post.Video = youtubeBase + videoId;
                         }
-                        else if (post.Video.Contains("youtu.be/"))
+                        else if (requestPost.Video.Contains("youtu.be/"))
                         {
-                            var videoId = post.Video.Split("youtu.be/")[1].Split('&')[0];
+                            var videoId = requestPost.Video.Split("youtu.be/")[1].Split('&')[0];
                             post.Video = youtubeBase + videoId;
                         }
                     }

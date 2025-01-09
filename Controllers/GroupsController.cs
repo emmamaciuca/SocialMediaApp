@@ -209,6 +209,20 @@ namespace SocialMediaApp.Controllers
             var currentUser = await _userManager.GetUserAsync(User);
             ViewBag.UserCurent = currentUser;
 
+            // Verificari pentru a nu putea face Show/id si sa vezi grupul chiar daca nu esti moderator/faci parte din grup
+            bool isMemberOrModerator = group.User.Id == currentUser.Id || 
+                await db.UserGroups.AnyAsync(ug => 
+                    ug.GroupId == id && 
+                    ug.UserId == currentUser.Id && 
+                    ug.Status == "Accepted");
+
+            if (!isMemberOrModerator && !User.IsInRole("Admin"))
+            {
+                TempData["message"] = "Nu aveți acces la acest grup.";
+                TempData["messageType"] = "alert-danger";
+                return RedirectToAction("Index");
+            }
+
             //cererile active
             var requests = db.UserGroups.Include( u => u.User)
                                         .Where(u => u.GroupId == id && u.Status == "Pending")
