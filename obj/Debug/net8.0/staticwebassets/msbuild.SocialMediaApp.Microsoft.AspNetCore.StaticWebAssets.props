@@ -256,6 +256,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\8d56d10c-f049-43c3-b1ed-964decbf8ca7_PozaProfil.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\acc79743-f2bd-4a44-bbfc-f0f061b4662c.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>SocialMediaApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SocialMediaApp</BasePath>
+      <RelativePath>images/acc79743-f2bd-4a44-bbfc-f0f061b4662c.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\acc79743-f2bd-4a44-bbfc-f0f061b4662c.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\b8097aa7-5ba9-461f-a9d3-0bb987448f59.jpeg))">
       <SourceType>Package</SourceType>
       <SourceId>SocialMediaApp</SourceId>

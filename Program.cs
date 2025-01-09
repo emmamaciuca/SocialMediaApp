@@ -44,9 +44,14 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+//controller ul e Home
+//daca utilizatorul e inregistrat il va redirectiona la pagina de postari
+//daca e neinregistrat va avea o pagina cu toti utilizatorii si poate vedea profilul utilizatorilor publici
+
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Posts}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+    //pattern: "{controller=Users}/{action=Index}/{id?}");
 app.MapRazorPages();
 
 app.Run();
