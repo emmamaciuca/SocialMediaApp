@@ -36,8 +36,26 @@ namespace SocialMediaApp.Controllers
         //[Authorize]
         public async Task<IActionResult> Index()
         {
-            var posts = db.Posts.Include("User")
-                                .OrderByDescending(a => a.Date);
+            //var posts = db.Posts.Include("User").OrderByDescending(a => a.Date);
+
+            //modificari sa se vada doar postarile utilizatorilor cu profil public sau cu profil privat daca sunteti prieteni
+            //utilizatorul curent
+            var currentUser = await _userManager.GetUserAsync(User);
+                ViewBag.UserCurent = currentUser;
+
+            // Lista de prieteni ai utilizatorului curent
+            var friends = await db.Follows
+                .Where(f => f.Status == "Accepted" && 
+                            (f.FollowerId == currentUser.Id || f.FollowedId == currentUser.Id))
+                .Select(f => f.FollowerId == currentUser.Id ? f.FollowedId : f.FollowerId)
+                .ToListAsync();
+
+            
+            var posts = await db.Posts
+                .Include(p => p.User)
+                .Where(p => p.User.Visibility == "Public" || friends.Contains(p.UserId))
+                .OrderByDescending(p => p.Date)
+                .ToListAsync();
 
             ViewBag.Posts = posts;
             if (TempData.ContainsKey("message"))
@@ -46,7 +64,6 @@ namespace SocialMediaApp.Controllers
                 ViewBag.Alert = TempData["messageType"];
             }
 
-            //motor de cautare
             //afisare paginata
             return View();
         }

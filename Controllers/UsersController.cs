@@ -85,6 +85,15 @@ namespace SocialMediaApp.Controllers
             ViewBag.UsersList = users;
             ViewBag.SearchString = search;
 
+            // Obține lista de prieteni ai utilizatorului curent
+            var friends = await db.Follows
+                .Where(f => f.Status == "Accepted" &&
+                            (f.FollowerId == currentUser.Id || f.FollowedId == currentUser.Id))
+                .Select(f => f.FollowerId == currentUser.Id ? f.FollowedId : f.FollowerId)
+                .ToListAsync();
+
+            ViewBag.Friends = friends;
+
             return View();
         }
 

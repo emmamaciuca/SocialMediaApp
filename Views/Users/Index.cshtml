@@ -46,7 +46,9 @@
 
                 @* din index se vede doar butonul de vizualizare profil doar daca e public*@
                 @* se vede butonul si daca utilizatorii sunt prieteni *@
-                @if (user.Visibility == "Public" || (ViewBag.UserCurent != null && (string)user.Id == ViewBag.UserCurent.Id))
+
+                @if (user.Visibility == "Public" || (ViewBag.UserCurent != null && (string)user.Id == ViewBag.UserCurent.Id)||
+                    (ViewBag.Friends != null && ViewBag.Friends.Contains(user.Id)))
                 {
                     <div class="d-flex flex-row justify-content-between p-3">
                         <a asp-controller="Users" asp-action="Show" asp-route-id="@user.Id" class="btn btn-sm btn-success">Vizualizare utilizator</a>
@@ -67,10 +69,11 @@
 
                 @* daca profilul e privat si utilizatorul curent nu e prieten cu celalat utilizator *@
                 @* follow *@
-                @if (user.Visibility == "Private")
+                @if (user.Visibility == "Private" && (ViewBag.Friends == null || !ViewBag.Friends.Contains(user.Id)))
                 {
                     @*buton cerere   - merge sa faci cererea dar nu se modifica scrisul de pe buton*@
                     @* nu e ViewBag.FollowStatus in controller si nu intra pe primul if *@
+                    @* am rezolvat problema nu mai e nevoie de FollowStatus se modifica scrisul*@
                     <form method="post" asp-controller="Follows" asp-action="Follow" asp-route-followedId="@user.Id">
                         @if (ViewBag.FollowStatus != null && ViewBag.FollowStatus.ContainsKey(user.Id))
                         {
