@@ -1,5 +1,11 @@
 @model SocialMediaApp.Models.Group
 
+@* buton pt a te inroarce la pagina de index*@
+<form asp-action="Index" asp-controller="Groups">
+    <button type="submit" class="btn btn-outline-primary">Intoarce-te la pagina principala</button>
+</form>
+<br />
+
 <h2>@Model.Name</h2>
 <p>@Model.Content</p>
 
@@ -10,6 +16,7 @@
     <form asp-action="Leave" asp-controller="Groups" method="post" asp-route-groupId="@Model.Id">
         <button type="submit" class="btn btn-warning">Părăsește grupul</button>
     </form>
+    <br />
 }
 
 @* moderatorul accepta/respinge cererile active*@
