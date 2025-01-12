@@ -179,7 +179,7 @@
                                 </div>
                             </div>
 
-                            <a class="btn btn-outline-success w-100 mt-3"
+                            <a class="btn btn-outline-success mt-3"
                                asp-controller="Posts"
                                asp-action="Show"
                                asp-route-id="@post.Id">
@@ -254,4 +254,16 @@
     .card-body {
         background-color: #ffffff;
     }
+
+    .btn-outline-success {
+        padding: 0.4rem 1rem;
+        border-radius: 20px;
+        font-size: 0.875rem;
+        transition: all 0.3s;
+    }
+        .btn-outline-success:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
 </style>

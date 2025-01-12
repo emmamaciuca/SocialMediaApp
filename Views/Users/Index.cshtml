@@ -2,7 +2,7 @@
 <br />
 <br />
 
-@if(ViewBag.Message != null)
+@if (ViewBag.Message != null)
 {
     <div class="alert-success p-3 rounded-3 text-center mb-5 @ViewBag.Alert">
         @ViewBag.Message
@@ -18,112 +18,146 @@
 </form>
 
 
-<div class="row">
-@foreach (var user in ViewBag.UsersList)
-{
-    <div class="col-4 mb-4">
-            <div class="card" style="height:100%; width: 100%;">
-        
-            <div class="card-body d-flex justify-content-between flex-column">
-                <div>
-                    @if (!string.IsNullOrEmpty(user.Image))
-                    {
-                        <img src="@user.Image" alt="Poza Profil" class="img-fluid rounded-circle" style="width: 100px; height: 100px;"> 
-                    }
-
-                    @if (@user.FirstName != null && @user.LastName != null)
-                    {
-                        <p><i class="bi bi-person"> </i> Nume utilizator: @user.FirstName @user.LastName</p>
-                    }
-
-                    @if (@user.Content != null)
-                    {
-                        <p><i class="bi-info-circle"></i> Descriere utilizator: @user.Content</p>
-                    }
-
-                </div>
-
-
-                @* din index se vede doar butonul de vizualizare profil doar daca e public*@
-                @* se vede butonul si daca utilizatorii sunt prieteni *@
-
-                @if (user.Visibility == "Public" || (ViewBag.UserCurent != null && (string)user.Id == ViewBag.UserCurent.Id)||
-                    (ViewBag.Friends != null && ViewBag.Friends.Contains(user.Id)))
-                {
-                    <div class="d-flex flex-row justify-content-between p-3">
-                        <a asp-controller="Users" asp-action="Show" asp-route-id="@user.Id" class="btn btn-sm btn-success">Vizualizare utilizator</a>
-
-                    </div>
-                }
-
-                @* Si daca adminul vrea sa stearga??? *@
-                @if ((string)user.Id != ViewBag.UserCurent.Id && User.IsInRole("Admin"))
-                {
-                    <div class="d-flex flex-row justify-content-between p-3">
-                        <form asp-controller="Users" asp-action="Delete" method="post" asp-route-id="@user.Id">
-                            <button type="submit" class="btn btn-danger">Sterge utilizator</button>
-                        </form>
-                    </div>
-                }   
-
-
-                @* daca profilul e privat si utilizatorul curent nu e prieten cu celalat utilizator *@
-                @* follow *@
-                @if (user.Visibility == "Private" && (ViewBag.Friends == null || !ViewBag.Friends.Contains(user.Id)))
-                {
-                    @*buton cerere   - merge sa faci cererea dar nu se modifica scrisul de pe buton*@
-                    @* nu e ViewBag.FollowStatus in controller si nu intra pe primul if *@
-                    @* am rezolvat problema nu mai e nevoie de FollowStatus se modifica scrisul*@
-                    <form method="post" asp-controller="Follows" asp-action="Follow" asp-route-followedId="@user.Id">
-                        @if (ViewBag.FollowStatus != null && ViewBag.FollowStatus.ContainsKey(user.Id))
-                        {
-                            var status = ViewBag.FollowStatus[user.Id];
-                            if (status == "Pending")
+<div class="container py-4">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        @foreach (var user in ViewBag.UsersList)
+        {
+            <div class="col">
+                <div class="card user-card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                        <!-- Profile Image -->
+                        <div class="text-center mb-3">
+                            @if (!string.IsNullOrEmpty(user.Image))
                             {
-                                <button type="button" class="btn btn-warning btn-sm" disabled>Cerere trimisa</button>
-                            }
-                            else if (status == "Accepted")
-                            {
-                                <button type="button" class="btn btn-success btn-sm" disabled>Prieteni</button>
+                                <img src="@user.Image" alt="Poza Profil" class="profile-image">
                             }
                             else
                             {
-                                <button type="submit" class="btn btn-primary btn-sm">Follow</button>
+                                <i class="bi bi-person-circle profile-icon"></i>
                             }
-                        }
-                        else
-                        {
-                            <button type="submit" class="btn btn-primary btn-sm">Follow</button>
-                        }
-                    </form>
-                }
-                    
-                @*buton cerere    ?????
-                <form method="post" asp-controller="Follows" asp-action="Follow" asp-route-followedId="@user.Id">
-                @if (user.FollowStatus.ContainsKey(user.Id) && Model.FollowStatus[user.Id] == "Friend")
-                {
-                    <button class="btn btn-secondary" disabled>Prieten</button>
-                }
-                else if (Model.FollowStatus.ContainsKey(user.Id) && Model.FollowStatus[user.Id] == "Pending")
-                {
-                    <button class="btn btn-warning" disabled>Cerere trimisa</button>
-                }
-                else
-                {
-                     <button class="btn btn-primary">Follow</button>
-                }
-                </form>*@
-                
+                        </div>
 
-                
+                        <!-- User Info -->
+                        <div class="user-info mb-4">
+                            @if (@user.FirstName != null && @user.LastName != null)
+                            {
+                                <h5 class="mb-2">
+                                    <i class="bi bi-person text-muted"></i>
+                                    <span>@user.FirstName @user.LastName</span>
+                                </h5>
+                            }
 
+                            @if (@user.Content != null)
+                            {
+                                <p class="text-muted mb-0">
+                                    <i class="bi bi-info-circle me-2"></i>
+                                    @user.Content
+                                </p>
+                            }
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="mt-auto">
+                            @if (user.Visibility == "Public" || (ViewBag.UserCurent != null && (string)user.Id == ViewBag.UserCurent.Id) ||
+                           (ViewBag.Friends != null && ViewBag.Friends.Contains(user.Id)))
+                            {
+                                <a asp-controller="Users" asp-action="Show" asp-route-id="@user.Id"
+                                   class="btn btn-outline-success btn-sm w-100 mb-2">
+                                    <i class="bi bi-eye me-2"></i>Vizualizare profil
+                                </a>
+                            }
+
+                            @if ((string)user.Id != ViewBag.UserCurent.Id && User.IsInRole("Admin"))
+                            {
+                                <form asp-controller="Users" asp-action="Delete" method="post" asp-route-id="@user.Id">
+                                    <button type="submit" class="btn btn-outline-danger btn-sm w-100">
+                                        <i class="bi bi-trash me-2"></i>Sterge utilizator
+                                    </button>
+                                </form>
+                            }
+
+                            @if (user.Visibility == "Private" && (ViewBag.Friends == null || !ViewBag.Friends.Contains(user.Id)))
+                            {
+                                <form method="post" asp-controller="Follows" asp-action="Follow" asp-route-followedId="@user.Id">
+                                    @if (ViewBag.FollowStatus != null && ViewBag.FollowStatus.ContainsKey(user.Id))
+                                    {
+                                        var status = ViewBag.FollowStatus[user.Id];
+                                        @if (status == "Pending")
+                                        {
+                                            <button type="button" class="btn btn-warning btn-sm w-100" disabled>
+                                                <i class="bi bi-clock me-2"></i>Cerere trimisa
+                                            </button>
+                                        }
+                                        else if (status == "Accepted")
+                                        {
+                                            <button type="button" class="btn btn-success btn-sm w-100" disabled>
+                                                <i class="bi bi-people me-2"></i>Prieteni
+                                            </button>
+                                        }
+                                        else
+                                        {
+                                            <button type="submit" class="btn btn-primary btn-sm w-100">
+                                                <i class="bi bi-person-plus me-2"></i>Follow
+                                            </button>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <button type="submit" class="btn btn-primary btn-sm w-100">
+                                            <i class="bi bi-person-plus me-2"></i>Follow
+                                        </button>
+                                    }
+                                </form>
+                            }
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
+        }
     </div>
-}
-   
 </div>
 
-    <br />
-    <br />
+<style>
+    .user-card {
+        transition: transform 0.2s;
+        border: none;
+    }
 
+        .user-card:hover {
+            transform: translateY(-5px);
+        }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #fff;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .profile-icon {
+        font-size: 3rem;
+        color: #6c757d;
+    }
+
+    .user-info {
+        font-size: 0.9rem;
+    }
+
+    .btn-sm {
+        padding: 0.4rem 1.2rem;
+        border-radius: 20px;
+        font-size: 0.875rem;
+        transition: all 0.3s;
+    }
+
+        .btn-sm:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+    .text-muted {
+        color: #6c757d !important;
+    }
+</style>

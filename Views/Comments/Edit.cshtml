@@ -1,7 +1,7 @@
 @model SocialMediaApp.Models.Comment
 
 
-<h2>Editare comentariu</h2>
+@* <h2>Editare comentariu</h2>
 <br />
 
 
@@ -18,4 +18,79 @@
 
     <button class="btn btn-primary" type="submit">Editează comentariul</button>
 
-</form>
+</form> *@
+
+
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-white py-3">
+                    <h4 class="mb-0 text-center">
+                        <i class="bi bi-chat-square-text me-2"></i>Editare comentariu
+                    </h4>
+                </div>
+
+                <div class="card-body p-4">
+                    <form asp-action="Edit" asp-controller="Comments" asp-route-id="@Model.Id" method="post">
+                        <div class="form-group mb-4">
+                            <label asp-for="Content" class="form-label">
+                                <i class="bi bi-pencil me-2"></i>Conținut comentariu
+                            </label>
+                            <textarea asp-for="Content" class="form-control" rows="4"></textarea>
+                            <span asp-validation-for="Content" class="text-danger small"></span>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-success btn-sm" type="submit">
+                                <i class="bi bi-check2 me-2"></i>Salveaza modificarile
+                            </button>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        border: none;
+        transition: transform 0.2s;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+    .form-control {
+        border-radius: 8px;
+        padding: 0.6rem 1rem;
+        transition: all 0.2s;
+    }
+
+        .form-control:focus {
+            border-color: #198754;
+            box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+        }
+
+    .btn-sm {
+        padding: 0.4rem 1.2rem;
+        border-radius: 20px;
+        font-size: 0.875rem;
+        transition: all 0.3s;
+    }
+
+        .btn-sm:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+    .form-label {
+        font-weight: 500;
+        color: #495057;
+        margin-bottom: 0.5rem;
+    }
+</style>

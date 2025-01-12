@@ -16,7 +16,7 @@
 </form>
 
 
-<div class="row">
+@* <div class="row">
 @foreach (var user in ViewBag.Users)
 {
     <div class="col-4 mb-4">
@@ -40,11 +40,11 @@
                     }
 
                 </div>
-
+ *@
 
                 @* din index se vede doar butonul de vizualizare profil doar daca e public*@
                 @* se vede butonul si daca utilizatorii sunt prieteni *@
-                @if (user.Visibility == "Public")
+                @* @if (user.Visibility == "Public")
                 {
                     <div class="d-flex flex-row justify-content-between p-3">
                         <a asp-controller="Home" asp-action="Show" asp-route-id="@user.Id" class="btn btn-sm btn-success">Vizualizare utilizator</a>
@@ -55,4 +55,110 @@
          </div>
     </div>
 }
+</div> *@
+
+<div class="container py-4">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        @foreach (var user in ViewBag.Users)
+        {
+            <div class="col">
+                <div class="card user-card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                        <!-- Profile Image -->
+                        <div class="text-center mb-3">
+                            @if (!string.IsNullOrEmpty(user.Image))
+                            {
+                                <img src="@user.Image" alt="Poza Profil" class="profile-image">
+                            }
+                            else
+                            {
+                                <i class="bi bi-person-circle profile-icon"></i>
+                            }
+                        </div>
+
+                        <!-- User Info -->
+                        <div class="user-info mb-4">
+                            @if (@user.FirstName != null && @user.LastName != null)
+                            {
+                                <h5 class="mb-2">
+                                    <i class="bi bi-person text-muted"></i>
+                                    <span>@user.FirstName @user.LastName</span>
+                                </h5>
+                            }
+
+                            @if (@user.Content != null)
+                            {
+                                <p class="text-muted mb-0">
+                                    <i class="bi bi-info-circle me-2"></i>
+                                    @user.Content
+                                </p>
+                            }
+                        </div>
+                        <!-- Action Buttons -->
+                        <div class="mt-auto">
+                            @if (user.Visibility == "Public" || (ViewBag.UserCurent != null && (string)user.Id == ViewBag.UserCurent.Id) ||
+                           (ViewBag.Friends != null && ViewBag.Friends.Contains(user.Id)))
+                            {
+                                <a asp-controller="Home" asp-action="Show" asp-route-id="@user.Id"
+                                   class="btn btn-outline-success btn-sm w-100 mb-2">
+                                    <i class="bi bi-eye me-2"></i>Vizualizare profil
+                                </a>
+                            }
+
+                           
+
+                        </div>
+
+                     
+
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 </div>
+
+<style>
+    .user-card {
+        transition: transform 0.2s;
+        border: none;
+    }
+
+        .user-card:hover {
+            transform: translateY(-5px);
+        }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #fff;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .profile-icon {
+        font-size: 3rem;
+        color: #6c757d;
+    }
+
+    .user-info {
+        font-size: 0.9rem;
+    }
+
+    .btn-sm {
+        padding: 0.4rem 1.2rem;
+        border-radius: 20px;
+        font-size: 0.875rem;
+        transition: all 0.3s;
+    }
+
+    .btn-sm:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+    .text-muted {
+        color: #6c757d !important;
+    }
+</style>

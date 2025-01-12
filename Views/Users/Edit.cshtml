@@ -1,7 +1,7 @@
 @model SocialMediaApp.Models.ApplicationUser
 
 
-
+@* 
 <form asp-controller="Users" asp-action="Edit" method="post" asp-route-id="@Model.Id" enctype="multipart/form-data">
 
     <div asp-validation-summary="All" class="text-danger"></div>
@@ -33,11 +33,9 @@
     <br />
 
 
-    @* Poza de profil *@
     <div class="img-fluid rounded-circle">
         <label asp-for="Image">Poza de profil</label>
         <input asp-for="Image" class="form-control" type="file"/>
-        @* <span asp-validation-for="Image" class="text-danger"></span> *@
     </div>
 
 
@@ -59,7 +57,6 @@
     <input asp-for="PhoneNumber" class="form-control" />
     <br />
 
-    @* Vizibilitate *@
     <i class="bi bi-eye"></i>
     <label asp-for="Visibility">Vizibilitate profil</label>
     <br />
@@ -73,7 +70,153 @@
     <button type="submit" class="btn btn-sm btn-success">Editare user</button>
 
 </form>
+ *@
 
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-white py-3">
+                    <h4 class="mb-0">
+                        <i class="bi bi-person-gear me-2"></i>Editare Profil
+                    </h4>
+                </div>
+                <div class="card-body p-4">
+                    <form asp-controller="Users" asp-action="Edit" method="post" asp-route-id="@Model.Id" enctype="multipart/form-data">
+                        <div asp-validation-summary="All" class="text-danger mb-4"></div>
 
+                        <!-- Personal Information -->
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="FirstName" class="form-label">
+                                        <i class="bi bi-person me-2"></i>Prenume
+                                    </label>
+                                    <input asp-for="FirstName" class="form-control" />
+                                    <span asp-validation-for="FirstName" class="text-danger small"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="LastName" class="form-label">
+                                        <i class="bi bi-person me-2"></i>Nume
+                                    </label>
+                                    <input asp-for="LastName" class="form-control" />
+                                    <span asp-validation-for="LastName" class="text-danger small"></span>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- Profile Description -->
+                        <div class="form-group mb-4">
+                            <label asp-for="Content" class="form-label">
+                                <i class="bi bi-info-circle me-2"></i>Descriere
+                            </label>
+                            <textarea asp-for="Content" class="form-control" rows="3"></textarea>
+                            <span asp-validation-for="Content" class="text-danger small"></span>
+                        </div>
 
+                        <!-- Profile Image -->
+                        <div class="form-group mb-4">
+                            <label asp-for="Image" class="form-label">
+                                <i class="bi bi-image me-2"></i>Poza de profil
+                            </label>
+                            <input asp-for="Image" class="form-control" type="file" />
+                        </div>
+
+                        <!-- Account Information -->
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="UserName" class="form-label">
+                                        <i class="bi bi-person-badge me-2"></i>Nume utilizator
+                                    </label>
+                                    <input asp-for="UserName" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="Email" class="form-label">
+                                        <i class="bi bi-envelope me-2"></i>Email
+                                    </label>
+                                    <input asp-for="Email" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact & Privacy -->
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="PhoneNumber" class="form-label">
+                                        <i class="bi bi-phone me-2"></i>Telefon
+                                    </label>
+                                    <input asp-for="PhoneNumber" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="Visibility" class="form-label">
+                                        <i class="bi bi-eye me-2"></i>Vizibilitate
+                                    </label>
+                                    <select asp-for="Visibility" class="form-control">
+                                        <option value="Public">Public</option>
+                                        <option value="Private">Private</option>
+                                    </select>
+                                    <span asp-validation-for="Visibility" class="text-danger small"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <button type="submit" class="btn btn-success btn-sm">
+                                <i class="bi bi-check2 me-2"></i>Salveaza modificarile
+                            </button>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        border: none;
+        transition: transform 0.2s;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+    .form-control {
+        border-radius: 8px;
+        padding: 0.6rem 1rem;
+        transition: all 0.2s;
+    }
+
+        .form-control:focus {
+            border-color: #198754;
+            box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+        }
+
+    .btn-sm {
+        padding: 0.4rem 1.2rem;
+        border-radius: 20px;
+        font-size: 0.875rem;
+        transition: all 0.3s;
+    }
+
+        .btn-sm:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+    .form-label {
+        font-weight: 500;
+        color: #495057;
+        margin-bottom: 0.5rem;
+    }
+</style>

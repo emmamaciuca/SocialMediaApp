@@ -1,8 +1,4 @@
-@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+@* 
 
 <div class="row">
     <div class="col-6">
@@ -69,3 +65,154 @@
         }
     </div>
 </div>
+ *@
+
+<div class="container py-4">
+    <div class="row g-4">
+        <!-- Friend Requests -->
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-header bg-white py-3">
+                    <h4 class="mb-0">
+                        <i class="bi bi-people-fill me-2"></i>Cereri de prietenie
+                    </h4>
+                </div>
+                <div class="card-body">
+                    @if (ViewBag.FriendRequests != null && ViewBag.FriendRequests.Count > 0)
+                    {
+                        foreach (var request in ViewBag.FriendRequests)
+                        {
+                            <div class="friend-item mb-3 pb-3 border-bottom">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-person-circle fs-4 me-3"></i>
+                                    <div>
+                                        <h6 class="mb-0">@request.Follower.FirstName @request.Follower.LastName</h6>
+                                        <small class="text-muted">dorește să fie prietenul tău</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-2 mt-2">
+                                    <form method="post" asp-controller="Follows" asp-action="Accept" asp-route-id="@request.Id">
+                                        <button type="submit" class="btn btn-success btn-sm">
+                                            <i class="bi bi-check2 me-1"></i>Acceptă
+                                        </button>
+                                    </form>
+                                    <form method="post" asp-controller="Follows" asp-action="Reject" asp-route-id="@request.Id">
+                                        <button type="submit" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-x me-1"></i>Refuză
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <div class="alert-success rounded-3 p-3">
+                            <i class="bi bi-info-circle me-2"></i>Nu ai cereri de prietenie în așteptare.
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- Followers and Following -->
+        <div class="col-md-6">
+            <!-- Followers -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-white py-3">
+                    <h4 class="mb-0">
+                        <i class="bi bi-person-heart me-2"></i>Followers
+                    </h4>
+                </div>
+                <div class="card-body">
+                    @if (ViewBag.Followers != null && ViewBag.Followers.Count > 0)
+                    {
+                        foreach (var follower in ViewBag.Followers)
+                        {
+                            <div class="friend-item mb-3 pb-3 border-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-person-circle fs-4 me-3"></i>
+                                    <h6 class="mb-0">@follower.FirstName @follower.LastName</h6>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <div class="alert-success rounded-3 p-3">
+                            <i class="bi bi-info-circle me-2"></i>Nu esti urmarit de nimeni momentan.
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <!-- Following -->
+            <div class="card shadow-sm">
+                <div class="card-header bg-white py-3">
+                    <h4 class="mb-0">
+                        <i class="bi bi-person-plus me-2"></i>Following
+                    </h4>
+                </div>
+                <div class="card-body">
+                    @if (ViewBag.Following != null && ViewBag.Following.Count > 0)
+                    {
+                        foreach (var follow in ViewBag.Following)
+                        {
+                            <div class="friend-item mb-3 pb-3 border-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-person-circle fs-4 me-3"></i>
+                                    <h6 class="mb-0">@follow.FirstName @follow.LastName</h6>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <div class="alert-success rounded-3 p-3">
+                            <i class="bi bi-info-circle me-2"></i>Nu urmărești pe nimeni momentan.
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        border: none;
+        transition: transform 0.2s;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+    .friend-item:last-child {
+        border-bottom: none !important;
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .btn-sm {
+        padding: 0.4rem 1.2rem;
+        border-radius: 20px;
+        font-size: 0.875rem;
+        transition: all 0.3s;
+    }
+
+        .btn-sm:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+    .alert-success {
+        background-color: rgba(25, 135, 84, 0.1);
+        color: #198754;
+    }
+
+    .card-header h4 {
+        color: #2c3e50;
+        font-size: 1.25rem;
+    }
+</style>
