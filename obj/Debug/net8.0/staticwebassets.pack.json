@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/SocialMediaApp.bundle.scp.css"
     },
     {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/css/design.css",
+      "PackagePath": "staticwebassets/css/design.css"
+    },
+    {
       "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

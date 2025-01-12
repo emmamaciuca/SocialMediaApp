@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RjovncriUlxYeiD9GHMEjghqcgKuZCRi1TTGWXHNZhE=",
+  "Hash": "1kWghtHSHc9qkhwIXTnCOl8By+k5WX76p4phhKeMX58=",
   "Source": "SocialMediaApp",
   "BasePath": "_content/SocialMediaApp",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/obj/Debug/net8.0/scopedcss/projectbundle/SocialMediaApp.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/css/design.css",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "css/design.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/design.css"
     },
     {
       "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/css/site.css",
