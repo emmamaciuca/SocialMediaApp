@@ -1,74 +1,102 @@
 <br />
 <br />
 
-@if (TempData["message"] != null)
-{
-    <div class="alert @ViewBag.Alert p-3 rounded-3 text-center mb-5">
-        @ViewBag.Message
-    </div>
-}
-
-<br />
-<a asp-controller="Groups" asp-action="New" class="btn btn-success rounded-pill mb-5">
-    <i class="bi bi-plus"></i> Adăugare grup
-</a>
-
-<div class="row">
-
-    @foreach (var group in ViewBag.Groups)
+<div class="container py-4">
+    @if (TempData["message"] != null)
     {
-        <div class="col-4 mb-4">
-
-            <div class="card">
-
-                <div class="card-body">
-                    
-                    <h5 class="card-title" name="Name">@group.Name</h5>
-                    <h6 class="card-text" name="Content">@group.Content</h6>
-
-                    <div><i class="bi bi-person"> Creat de: </i> @group.User.UserName</div>
-
-                    <br />
-
-                    @* daca utilizatorul face parte din grup sau e moderator *@
-                    @if(ViewBag.UserGroupsId.Contains(group.Id) || group.UserId == ViewBag.UserCurent.Id || User.IsInRole("Admin"))
-                    {
-                        @* <a asp-controller="Groups" asp-action="Show" asp-route-id="@group.Id" class="btn alert-success">Afisare Grup</a> *@
-                        <form asp-controller="Groups" asp-action="Show" asp-route-id="@group.Id" method="get">
-                            <button type="submit" class="btn btn-success">Afisare Grup</button>
-                        </form>
-                        <br/>
-                    }
-                    else
-                    {
-                        @* daca utilizatorul nu face parte din grup/ nu a fost acceptat inca *@
-                        @* <a asp-controller="Groups" asp-action="Show" asp-route-id="@group.Id" class="btn alert-success">Afisare Grup</a> *@
-                        <form asp-controller="Groups" asp-action="Join" method="post" asp-route-id="@group.Id">
-                            <button type="submit" class="btn btn-primary">Join Grup</button>
-                        </form>
-                        <br/>
-                    }
-
-
-
-                    @* daca utilizatorul NU face parte din grup sau nu a fost acceptat inca *@
-                    @* buton de join *@
-                    @* @if(!ViewBag.UserGroups.Any(u => u.GroupId == group.Id))
-                    {
-
-                    } *@
-
-
-                    @* Admin si moderator sterg grupul*@
-                    @if ((string)group.UserId == ViewBag.UserCurent.Id || User.IsInRole("Admin"))
-                    {
-                        <form asp-controller="Groups" asp-action="Delete" method="post" asp-route-id="@group.Id">
-                            <button type="submit" class="btn btn-danger">Sterge grup</button>
-                        </form>
-                    } 
-                </div>
-            </div>
+        <div class="alert @ViewBag.Alert p-3 rounded-3 text-center mb-4">
+            @ViewBag.Message
         </div>
     }
 
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4 class="mb-0">
+            <i class="bi bi-people-fill me-2"></i>Grupuri
+        </h4>
+        <a asp-controller="Groups" asp-action="New" class="btn btn-success btn-sm">
+            <i class="bi bi-plus-lg me-2"></i>Adaugare grup
+        </a>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        @foreach (var group in ViewBag.Groups)
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-auto">
+                            <h5 class="card-title">
+                                <i class="bi bi-collection me-2"></i>@group.Name
+                            </h5>
+                            <p class="card-text text-muted">@group.Content</p>
+                            <div class="user-info text-muted mb-3">
+                                <i class="bi bi-person-circle"></i>
+                                <span class="ms-2">@group.User.UserName</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            @if (ViewBag.UserGroupsId.Contains(group.Id) || group.UserId == ViewBag.UserCurent.Id || User.IsInRole("Admin"))
+                            {
+                                <form asp-controller="Groups" asp-action="Show" asp-route-id="@group.Id" method="get" class="mb-2">
+                                    <button type="submit" class="btn btn-outline-success btn-sm w-100">
+                                        <i class="bi bi-eye me-2"></i>Afisare Grup
+                                    </button>
+                                </form>
+                            }
+                            else
+                            {
+                                <form asp-controller="Groups" asp-action="Join" method="post" asp-route-id="@group.Id" class="mb-2">
+                                    <button type="submit" class="btn btn-outline-primary btn-sm w-100">
+                                        <i class="bi bi-person-plus me-2"></i>Join Grup
+                                    </button>
+                                </form>
+                            }
+
+                            @if ((string)group.UserId == ViewBag.UserCurent.Id || User.IsInRole("Admin"))
+                            {
+                                <form asp-controller="Groups" asp-action="Delete" method="post" asp-route-id="@group.Id">
+                                    <button type="submit" class="btn btn-outline-danger btn-sm w-100">
+                                        <i class="bi bi-trash me-2"></i>Sterge grup
+                                    </button>
+                                </form>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 </div>
+
+<style>
+    .card {
+        border: none;
+        transition: transform 0.2s;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+    .btn-sm {
+        padding: 0.4rem 1.2rem;
+        border-radius: 20px;
+        font-size: 0.875rem;
+        transition: all 0.3s;
+    }
+
+        .btn-sm:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+    .card-title {
+        color: #2c3e50;
+        font-size: 1.25rem;
+    }
+
+    .user-info {
+        font-size: 0.9rem;
+    }
+</style>
