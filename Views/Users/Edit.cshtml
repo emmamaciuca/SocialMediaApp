@@ -1,77 +1,6 @@
 @model SocialMediaApp.Models.ApplicationUser
 
 
-@* 
-<form asp-controller="Users" asp-action="Edit" method="post" asp-route-id="@Model.Id" enctype="multipart/form-data">
-
-    <div asp-validation-summary="All" class="text-danger"></div>
-
-    <i class="bi bi-person"></i>
-
-    <label asp-for="FirstName">Prenume</label>
-    <br />
-    <input asp-for="FirstName" class="form-control" />
-    <br />
-    <br /><span asp-validation-for="FirstName" class="text-danger"></span>
-    <br />
-
-    <i class="bi bi-person"></i>
-    <label asp-for="LastName">Nume</label>
-    <br />
-    <input asp-for="LastName" class="form-control" />
-    <br />
-    <br /><span asp-validation-for="LastName" class="text-danger"></span>
-    <br />
-
-
-    <i class="bi-info-circle"></i> 
-    <label asp-for="Content">Descriere</label>
-    <br />
-    <input asp-for="Content" class="form-control" />
-    <br />
-    <br /><span asp-validation-for="Content" class="text-danger"></span>
-    <br />
-
-
-    <div class="img-fluid rounded-circle">
-        <label asp-for="Image">Poza de profil</label>
-        <input asp-for="Image" class="form-control" type="file"/>
-    </div>
-
-
-    <i class="bi bi-person"></i>
-    <label asp-for="UserName">Nume utilizator</label>
-    <br />
-    <input asp-for="UserName" class="form-control" />
-    <br />
-
-    <i class="bi bi-envelope"></i>
-    <label asp-for="Email">Email utilizator</label>
-    <br />
-    <input asp-for="Email" class="form-control" />
-    <br />
-
-    <i class="bi bi-phone"></i>
-    <label asp-for="PhoneNumber">Numar telefon</label>
-    <br />
-    <input asp-for="PhoneNumber" class="form-control" />
-    <br />
-
-    <i class="bi bi-eye"></i>
-    <label asp-for="Visibility">Vizibilitate profil</label>
-    <br />
-    <select asp-for="Visibility" class="form-control">
-        <option value="Public">Public</option>
-        <option value="Private">Private</option>
-    </select>
-    <span asp-validation-for="Visibility" class="text-danger"></span>
-    <br />
-
-    <button type="submit" class="btn btn-sm btn-success">Editare user</button>
-
-</form>
- *@
-
 <div class="container py-4">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -85,7 +14,6 @@
                     <form asp-controller="Users" asp-action="Edit" method="post" asp-route-id="@Model.Id" enctype="multipart/form-data">
                         <div asp-validation-summary="All" class="text-danger mb-4"></div>
 
-                        <!-- Personal Information -->
                         <div class="row mb-4">
                             <div class="col-md-6">
                                 <div class="form-group mb-3">
@@ -107,7 +35,6 @@
                             </div>
                         </div>
 
-                        <!-- Profile Description -->
                         <div class="form-group mb-4">
                             <label asp-for="Content" class="form-label">
                                 <i class="bi bi-info-circle me-2"></i>Descriere
@@ -116,7 +43,6 @@
                             <span asp-validation-for="Content" class="text-danger small"></span>
                         </div>
 
-                        <!-- Profile Image -->
                         <div class="form-group mb-4">
                             <label asp-for="Image" class="form-label">
                                 <i class="bi bi-image me-2"></i>Poza de profil
@@ -124,7 +50,6 @@
                             <input asp-for="Image" class="form-control" type="file" />
                         </div>
 
-                        <!-- Account Information -->
                         <div class="row mb-4">
                             <div class="col-md-6">
                                 <div class="form-group mb-3">
@@ -144,7 +69,6 @@
                             </div>
                         </div>
 
-                        <!-- Contact & Privacy -->
                         <div class="row mb-4">
                             <div class="col-md-6">
                                 <div class="form-group mb-3">

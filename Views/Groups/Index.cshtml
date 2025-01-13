@@ -14,7 +14,7 @@
             <i class="bi bi-people-fill me-2"></i>Grupuri
         </h4>
         <a asp-controller="Groups" asp-action="New" class="btn btn-success btn-sm">
-            <i class="bi bi-plus-lg me-2"></i>Adaugare grup
+            <i class="bi bi-plus-lg me-2"></i>Adauga grup
         </a>
     </div>
 
@@ -40,7 +40,7 @@
                             {
                                 <form asp-controller="Groups" asp-action="Show" asp-route-id="@group.Id" method="get" class="mb-2">
                                     <button type="submit" class="btn btn-outline-success btn-sm w-100">
-                                        <i class="bi bi-eye me-2"></i>Afisare Grup
+                                        <i class="bi bi-eye me-2"></i>Vezi grup
                                     </button>
                                 </form>
                             }
@@ -48,7 +48,7 @@
                             {
                                 <form asp-controller="Groups" asp-action="Join" method="post" asp-route-id="@group.Id" class="mb-2">
                                     <button type="submit" class="btn btn-outline-primary btn-sm w-100">
-                                        <i class="bi bi-person-plus me-2"></i>Join Grup
+                                        <i class="bi bi-person-plus me-2"></i>Join
                                     </button>
                                 </form>
                             }
@@ -99,4 +99,16 @@
     .user-info {
         font-size: 0.9rem;
     }
+
+    .btn-outline-success {
+        padding: 0.4rem 1rem;
+        border-radius: 20px;
+        font-size: 0.875rem;
+        transition: all 0.3s;
+    }
+
+        .btn-outline-success:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
 </style>

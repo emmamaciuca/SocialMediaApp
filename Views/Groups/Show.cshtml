@@ -1,76 +1,13 @@
 @model SocialMediaApp.Models.Group
 
-@* <h2>@Model.Name</h2>
-<p>@Model.Content</p>
 
-@if(Model.User != null && (string)Model.UserId != ViewBag.UserCurent.Id)
-{
-    <form asp-action="Leave" asp-controller="Groups" method="post" asp-route-groupId="@Model.Id">
-        <button type="submit" class="btn btn-warning">Părăsește grupul</button>
-    </form>
-}
-
-@if(Model.User != null && (string)Model.UserId == ViewBag.UserCurent.Id)
-{
-    <h3>Cereri de alăturare</h3>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Utilizator</th>
-                <th>Acțiuni</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var request in ViewBag.Requests)
-            {
-                <tr>
-                    <td>@request.User.UserName</td>
-                    <td>
-                        <form asp-action="AcceptJoin" asp-controller="Groups" method="post" asp-route-userGroupId="@request.Id">
-                            <button type="submit" class="btn btn-success">Accept</button>
-                        </form>
-                        <br/>
-                        <form asp-action="RejectJoin" asp-controller="Groups" method="post" asp-route-userGroupId="@request.Id">
-                            <button type="submit" class="btn btn-danger">Reject</button>
-                        </form>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
-
-
-
-<h3>Membrii grupului</h3>
-<table class="table">
-    
-    <tbody>
-        <tr>
-            <td>@Model.User.FirstName @Model.User.LastName</td>
-        </tr>
-        @foreach (var member in ViewBag.Members)
-        {
-            <tr>
-                <td>@member.FirstName @member.LastName</td>
-                @if(Model.User != null && (string)Model.UserId == ViewBag.UserCurent.Id)
-                {
-                    <td>
-                        <form asp-action="Remove" asp-controller="Groups" method="post">
-                            <input type="hidden" name="userId" value="@member.Id">
-                            <input type="hidden" name="groupId" value="@Model.Id">
-                            <button type="submit" class="btn btn-warning">Elimina utilizatorul</button>
-                        </form>
-                    </td>
-                }
-            </tr>
-        }
-    </tbody>
-</table> *@
-
+@* buton pt a te inroarce la pagina de index*@
+<form asp-action="Index" asp-controller="Groups">
+    <button type="submit" class="btn btn-outline-success mt-3">Intoarce-te la pagina principala</button>
+</form>
+<br />
 
 <div class="container py-4">
-    <!-- Group Header -->
     <div class="card shadow-sm mb-4">
         <div class="card-body">
             <div class="d-flex justify-content-between align-items-start">
@@ -92,7 +29,6 @@
         </div>
     </div>
 
-    <!-- Join Requests Section -->
     @if(Model.User != null && (string)Model.UserId == ViewBag.UserCurent.Id)
     {
         <div class="card shadow-sm mb-4">
@@ -130,7 +66,6 @@
         </div>
     }
 
-    <!-- Members Section -->
     <div class="card shadow-sm">
         <div class="card-header bg-white py-3">
             <h4 class="mb-0">
@@ -196,108 +131,9 @@
 </style>
 
 
-@* <h3>Mesaje</h3>
 
-
-@if (Model.Messages != null && Model.Messages.Any())
-{
-    @foreach (var message in Model.Messages)
-    { 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2"></div>
-
-                <div class="col-md-8">
-
-                    <div>
-
-                        <p>@message.Content</p>
-                        <small>@message.Date</small>
-                        <strong><i class="bi bi-person"> @message.User.UserName</i></strong>
-
-                    </div>
-                    <br>
-
-                    <div class="d-flex">
-                    @if (message.UserId == ViewBag.UserCurent.Id)
-                    {
-                        <div>
-                            <a class="btn btn-outline-primary" asp-controller="Messages" asp-action="Edit" asp-route-id="@message.Id">
-                                <i class="bi bi-pencil-square"></i> Editeaza
-                            </a>
-                        </div>
-                    }
-                    @if (message.UserId == ViewBag.UserCurent.Id || User.IsInRole("Admin"))
-                    {
-                        <div>
-                            <form method="post" asp-controller="Messages" asp-action="Delete" asp-route-id="@message.Id">
-                                <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i>Sterge</button
-                            </form>
-                        </div>
-                    }
-                    </div>
-                    
-
-                    <br />
-                </div>
-
-                <div class="col-md-2"></div>
-
-            </div>
-
-        </div>
-    }
-}
-else 
-{
-    <p>Utilizatorul nu are postari</p>    
-}
-
-
-
-
-<div class="container">
-
-    <div class="row">
-
-        <div class="col-md-2"></div>
-
-        <div class="col-md-8">
-
-            <div class="card">
-
-                <form method="post" asp-controller="Groups" asp-action="Show">
-
-                    <div class="card-body">
-
-                        <input type="hidden" name="GroupId" value="@Model.Id" />
-
-                        <label>Continut mesaj</label>
-                        <br />
-
-                        <textarea class="form-control" name="Content"></textarea>
-
-                        <span asp-validation-for="Content" class="text-danger"></span>
-                        <br /><br />
-
-                        <button class="btn btn-success" type="submit">Adauga mesaj</button>
-
-                    </div>
-
-                </form>
-
-            </div>
-
-        </div>
-
-        <div class="col-md-2"></div>
-
-    </div>
-
-</div> *@
 
 <div class="container py-4">
-    <!-- Messages Header -->
     <div class="card shadow-sm mb-4">
         <div class="card-header bg-white py-3">
             <h4 class="mb-0">
@@ -356,7 +192,6 @@ else
         </div>
     </div>
 
-    <!-- Message Input Form -->
     <div class="card shadow-sm">
         <div class="card-body">
             <form method="post" asp-controller="Groups" asp-action="Show">
@@ -369,8 +204,8 @@ else
                               placeholder="Scrie mesajul tău aici..."></textarea>
                     <span asp-validation-for="Content" class="text-danger"></span>
                 </div>
-                <button class="btn btn-success btn-sm" type="submit">
-                    <i class="bi bi-send me-2"></i>Trimite mesaj
+                <button class="btn btn-outline-success mt-3" type="submit">
+                    <i class="bi bi-cursor-fill me-2"></i>Trimite mesaj
                 </button>
             </form>
         </div>
@@ -405,10 +240,10 @@ else
     }
 
     .message-content {
-        max-width: 85%; /* Increased from 70% */
+        max-width: 85%; 
         background: #f8f9fa;
         border-radius: 15px;
-        padding: 1rem; /* Increased from 0.8rem */
+        padding: 1rem;
         position: relative;
     }
 
@@ -461,5 +296,17 @@ else
         .form-control:focus {
             border-color: #198754;
             box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+        }
+
+    .btn-outline-success {
+        padding: 0.4rem 1rem;
+        border-radius: 20px;
+        font-size: 0.875rem;
+        transition: all 0.3s;
+    }
+
+        .btn-outline-success:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 </style>

@@ -1,287 +1,6 @@
-@* @model SocialMediaApp.Models.Post
-
-
-
-
-@if (TempData["message"] != null)
-{
-    <div class="alert @ViewBag.Alert p-3 rounded-3 text-center mb-5">
-        @ViewBag.Message
-    </div>
-}
-
-<br />
-<form asp-action="Index" asp-controller="Posts">
-    <button type="submit" class="btn btn-outline-primary">Intoarce-te la pagina principala</button>
-</form>
-<br />
-
-<div class="card">
-
-    <div class="card-body">
-
-        @if (!string.IsNullOrEmpty(@Model.Image))
-        {
-            <img src="@Model.Image" alt="Poza postare" class="img-fluid" >
-        }
-        
-        <br />
-        
-        @if (!string.IsNullOrEmpty(Model.Video))
-        {
-            <div class="video-container">
-                <iframe width="560" height="315"
-                        src="@Model.Video"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                </iframe>
-            </div>
-        }
-
-        <div class="card-text">@Model.Content</div>
-
-
-
-        <div class="d-flex justify-content-between flex-row mt-5">
-
-            <div><i class="bi bi-person"></i> @Model.User.UserName</div>
-
-            <span class="alert-success">@Model.Date</span>
-
-        </div>
-
-    </div>
-
-
-    <div class="d-flex flex-row justify-content-between">
-        @if(Model.UserId == ViewBag.UserCurent)
-        {
-            <a class="btn btn-success" asp-controller="Posts" asp-action="Edit" asp-route-id="@Model.Id">Editeaza postare</a>
-        }
-
-        @if ((ViewBag.AfisareButoane == true && Model.UserId == ViewBag.UserCurent) || ViewBag.EsteAdmin == true)
-        {
-            <form method="post" asp-controller="Posts" asp-action="Delete" asp-route-id="@Model.Id">
-                <button class="btn btn-danger" type="submit">Sterge postare</button>
-            </form>
-        }
-    </div>
-</div>
-
-<br />
-<br />
-
-
-@foreach (var comm in Model.Comments)
-{
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2"></div>
-
-            <div class="col-md-8">
-
-                <div>
-
-                    <p>@comm.Content</p>
-                    <small>@comm.Date</small>
-                    <strong><i class="bi bi-person"> @comm.User.UserName</i></strong>
-
-                </div>
-                <br>
-
-                <div class="d-flex">
-                    @if (comm.UserId == ViewBag.UserCurent)
-                    {
-                        <div>
-                            <a class="btn btn-outline-primary" asp-controller="Comments" asp-action="Edit" asp-route-id="@comm.Id">
-                                <i class="bi bi-pencil-square"></i> Editeaza
-                            </a>
-                        </div>
-                    }
-                    @if (comm.UserId == ViewBag.UserCurent || ViewBag.EsteAdmin == true)
-                    {
-                        <div>
-                            <form method="post" asp-controller="Comments" asp-action="Delete" asp-route-id="@comm.Id">
-
-                                <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i>Sterge</button>
-
-                            </form>
-                        </div>
-                    }
-                </div>
-
-                <br />
-            </div>
-
-            <div class="col-md-2"></div>
-
-        </div>
-
-    </div>
-}
-
-
-
-<div class="container">
-
-    <div class="row">
-
-        <div class="col-md-2"></div>
-
-        <div class="col-md-8">
-
-            <div class="card">
-
-                <form method="post" asp-controller="Posts" asp-action="Show">
-
-                    <div class="card-body">
-
-                        <input type="hidden" name="PostId" value="@Model.Id" />
-
-                        <label>Continut comentariu</label>
-                        <br />
-
-                        <textarea class="form-control" name="Content"></textarea>
-
-                        <span asp-validation-for="Content" class="text-danger"></span>
-                        <br /><br />
-
-                        <button class="btn btn-success" type="submit">Adauga comentariul</button>
-
-                    </div>
-
-                </form>
-
-            </div>
-
-        </div>
-
-        <div class="col-md-2"></div>
-
-    </div>
-
-</div>
- *@
-
 @model SocialMediaApp.Models.Post
 
-@* <div class="container py-4">
-    @if (TempData["message"] != null)
-    {
-        <div class="alert @ViewBag.Alert p-3 rounded-3 text-center mb-4">
-            @ViewBag.Message
-        </div>
-    }
 
-    <!-- Main Post Card -->
-    <div class="card shadow-sm mb-4">
-        <div class="card-body">
-            @if (!string.IsNullOrEmpty(@Model.Image))
-            {
-                <div class="media-container mb-3">
-                    <div class="image-wrapper">
-                        <img src="@Model.Image" alt="Poza postare" class="img-fluid">
-                    </div>
-                </div>
-            }
-
-            @if (!string.IsNullOrEmpty(Model.Video))
-            {
-                <div class="ratio ratio-16x9 mb-3">
-                    <iframe src="@Model.Video"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                    </iframe>
-                </div>
-            }
-
-            <p class="card-text mb-4">@Model.Content</p>
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <div class="user-info">
-                    <i class="bi bi-person-circle"></i>
-                    <span class="ms-2">@Model.User.UserName</span>
-                </div>
-                <span class="badge bg-success">@Model.Date</span>
-            </div>
-
-            <div class="d-flex gap-2">
-                @if (Model.UserId == ViewBag.UserCurent)
-                {
-                    <a class="btn btn-outline-primary" asp-controller="Posts" asp-action="Edit" asp-route-id="@Model.Id">
-                        <i class="bi bi-pencil-square me-1"></i>Editeaza
-                    </a>
-                }
-
-                @if ((ViewBag.AfisareButoane == true && Model.UserId == ViewBag.UserCurent) || ViewBag.EsteAdmin == true)
-                {
-                    <form method="post" asp-controller="Posts" asp-action="Delete" asp-route-id="@Model.Id">
-                        <button class="btn btn-outline-danger" type="submit">
-                            <i class="bi bi-trash me-1"></i>Sterge
-                        </button>
-                    </form>
-                }
-            </div>
-        </div>
-    </div>
-
-    <!-- Comments Section -->
-    <div class="card shadow-sm mb-4">
-        <div class="card-header bg-white">
-            <h5 class="mb-0"><i class="bi bi-chat-left-text me-2"></i>Comentarii</h5>
-        </div>
-        <div class="card-body">
-            <!-- Comment Form -->
-            <form method="post" asp-controller="Posts" asp-action="Show" class="mb-4">
-                <input type="hidden" name="PostId" value="@Model.Id" />
-                <div class="form-group">
-                    <label class="form-label">Adauga un comentariu</label>
-                    <textarea class="form-control" name="Content" rows="3"></textarea>
-                    <span asp-validation-for="Content" class="text-danger"></span>
-                </div>
-                <button class="btn btn-success mt-3" type="submit">
-                    <i class="bi bi-plus-circle me-1"></i>Adauga comentariul
-                </button>
-            </form>
-
-            <!-- Comments List -->
-            @foreach (var comm in Model.Comments)
-            {
-                <div class="comment-item border-bottom pb-3 mb-3">
-                    <p class="mb-2">@comm.Content</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="user-info">
-                            <i class="bi bi-person-circle"></i>
-                            <span class="ms-2 fw-bold">@comm.User.UserName</span>
-                            <small class="text-muted ms-2">@comm.Date</small>
-                        </div>
-                        <div class="d-flex gap-2">
-                            @if (comm.UserId == ViewBag.UserCurent)
-                            {
-                                <a class="btn btn-sm btn-outline-primary" asp-controller="Comments" asp-action="Edit" asp-route-id="@comm.Id">
-                                    <i class="bi bi-pencil-square"></i>
-                                </a>
-                            }
-                            @if (comm.UserId == ViewBag.UserCurent || ViewBag.EsteAdmin == true)
-                            {
-                                <form method="post" asp-controller="Comments" asp-action="Delete" asp-route-id="@comm.Id">
-                                    <button class="btn btn-sm btn-outline-danger" type="submit">
-                                        <i class="bi bi-trash"></i>
-                                    </button>
-                                </form>
-                            }
-                        </div>
-                    </div>
-                </div>
-            }
-        </div>
-    </div>
-</div> *@
-
-
-
-<!-- Show.cshtml -->
 <div class="container py-4">
     @if (TempData["message"] != null)
     {
@@ -290,17 +9,16 @@
         </div>
     }
 
-    <!-- Main Post Card -->
+    <br />
+    @* buton pt a te inroarce la pagina de index*@
+    <form asp-action="Index" asp-controller="Posts">
+        <button type="submit" class="btn btn-outline-success mt-3">Intoarce-te la pagina principala</button>
+    </form>
+    <br />
+
     <div class="card shadow-sm mb-4">
         <div class="card-body">
-            @* @if (!string.IsNullOrEmpty(@Model.Image))
-            {
-                <div class="media-container mb-3">
-                    <div class="image-wrapper">
-                        <img src="@Model.Image" alt="Poza postare" class="img-fluid">
-                    </div>
-                </div>
-            } *@
+           
 
             @if (!string.IsNullOrEmpty(@Model.Image))
             {
@@ -353,13 +71,11 @@
         </div>
     </div>
 
-    <!-- Comments Section -->
     <div class="card shadow-sm mb-4">
         <div class="card-header bg-white">
             <h5 class="mb-0"><i class="bi bi-chat-left-text me-2"></i>Comentarii</h5>
         </div>
         <div class="card-body">
-            <!-- Comment Form -->
             <form method="post" asp-controller="Posts" asp-action="Show" class="mb-4">
                 <input type="hidden" name="PostId" value="@Model.Id" />
                 <div class="form-group">
@@ -367,12 +83,11 @@
                     <textarea class="form-control" name="Content" rows="3"></textarea>
                     <span asp-validation-for="Content" class="text-danger"></span>
                 </div>
-                <button class="btn btn-success mt-3" type="submit">
-                    <i class="bi bi-plus-circle me-1"></i>Adauga comentariul
-                </button>
+                <button class="btn btn-outline-success mt-3" type="submit">
+                    <i class="bi bi-plus-circle me-1"></i>Adauga comentariul 
+              </button>
             </form>
 
-            <!-- Comments List -->
             @foreach (var comm in Model.Comments)
             {
                 <div class="comment-item border-bottom pb-3 mb-3">
@@ -443,5 +158,17 @@
         border-bottom: none !important;
         margin-bottom: 0 !important;
         padding-bottom: 0 !important;
+    }
+
+    .btn-outline-success {
+        padding: 0.4rem 1rem;
+        border-radius: 20px;
+        font-size: 0.875rem;
+        transition: all 0.3s;
+    }
+
+    .btn-outline-success:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 </style>
