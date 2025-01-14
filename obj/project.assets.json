@@ -8650,11 +8650,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp.csproj",
+      "projectUniqueName": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/SocialMediaApp.csproj",
       "projectName": "SocialMediaApp",
-      "projectPath": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp.csproj",
+      "projectPath": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/SocialMediaApp.csproj",
       "packagesPath": "/Users/emmamaciuca/.nuget/packages/",
-      "outputPath": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/obj/",
+      "outputPath": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/emmamaciuca/.nuget/NuGet/NuGet.Config"

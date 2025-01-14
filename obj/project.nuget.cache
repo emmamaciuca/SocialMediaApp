@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P4QB2lrVGEo=",
+  "dgSpecHash": "AjtrfaPXhR8=",
   "success": true,
-  "projectFilePath": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp.csproj",
+  "projectFilePath": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/SocialMediaApp.csproj",
   "expectedPackageFiles": [
     "/Users/emmamaciuca/.nuget/packages/anglesharp/0.17.1/anglesharp.0.17.1.nupkg.sha512",
     "/Users/emmamaciuca/.nuget/packages/anglesharp.css/0.17.0/anglesharp.css.0.17.0.nupkg.sha512",

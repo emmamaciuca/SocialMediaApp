@@ -97,6 +97,15 @@
                                     }
                                 </form>
                             }
+                            @if (user.Visibility == "Private" && (ViewBag.Friends == null || !ViewBag.Friends.Contains(user.Id)) && User.IsInRole("Admin"))
+                            {
+                                <form asp-controller="Users" asp-action="Delete" method="post" asp-route-id="@user.Id"
+                                    class="d-inline-block ms-2">
+                                    <button type="submit" class="btn btn-outline-danger btn-sm">
+                                        <i class="bi bi-trash"></i> Sterge utilizator
+                                    </button>
+                                </form>
+                            }
                         </div>
 
                        

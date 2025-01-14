@@ -53,7 +53,7 @@ namespace SocialMediaApp.Controllers
             
             var posts = await db.Posts
                 .Include(p => p.User)
-                .Where(p => p.User.Visibility == "Public" || friends.Contains(p.UserId))
+                .Where(p => p.User.Visibility == "Public" || friends.Contains(p.UserId)||p.UserId == currentUser.Id)
                 .OrderByDescending(p => p.Date)
                 .ToListAsync();
 

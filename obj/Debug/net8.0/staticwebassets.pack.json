@@ -1,359 +1,443 @@
 {
   "Files": [
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/obj/Debug/net8.0/scopedcss/projectbundle/SocialMediaApp.bundle.scp.css",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/obj/Debug/net8.0/scopedcss/projectbundle/SocialMediaApp.bundle.scp.css",
       "PackagePath": "staticwebassets/SocialMediaApp.bundle.scp.css"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/css/design.css",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/css/design.css",
       "PackagePath": "staticwebassets/css/design.css"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/css/site.css",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/favicon.ico",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/046f9468-7374-4a39-85ad-6a4773b4308a.jpg",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/046f9468-7374-4a39-85ad-6a4773b4308a.jpg",
       "PackagePath": "staticwebassets/images/046f9468-7374-4a39-85ad-6a4773b4308a.jpg"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/0739e834-1ee0-4c76-ad68-aeae8a5ef5ab_Orar.png",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/0739e834-1ee0-4c76-ad68-aeae8a5ef5ab_Orar.png",
       "PackagePath": "staticwebassets/images/0739e834-1ee0-4c76-ad68-aeae8a5ef5ab_Orar.png"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/07cfc25d-87a6-4be5-8feb-5dd87420524a_PozaProfil2.jpeg",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/07cfc25d-87a6-4be5-8feb-5dd87420524a_PozaProfil2.jpeg",
       "PackagePath": "staticwebassets/images/07cfc25d-87a6-4be5-8feb-5dd87420524a_PozaProfil2.jpeg"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/0f1cf7a6-aac8-4830-9019-b2d211c05943.png",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/09ad884f-2b7d-45c4-a4ce-5487088c4a29.png",
+      "PackagePath": "staticwebassets/images/09ad884f-2b7d-45c4-a4ce-5487088c4a29.png"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/0ceee8ed-24fb-4af5-865e-bc51d4318b7d.jpeg",
+      "PackagePath": "staticwebassets/images/0ceee8ed-24fb-4af5-865e-bc51d4318b7d.jpeg"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/0f1cf7a6-aac8-4830-9019-b2d211c05943.png",
       "PackagePath": "staticwebassets/images/0f1cf7a6-aac8-4830-9019-b2d211c05943.png"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/22bc3101-40a4-4e2b-a449-9f15d6e49a16.png",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/22bc3101-40a4-4e2b-a449-9f15d6e49a16.png",
       "PackagePath": "staticwebassets/images/22bc3101-40a4-4e2b-a449-9f15d6e49a16.png"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/27770190-c0dd-483c-9d12-97cea7f08a25.png",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/24903e9a-3fc2-4212-9dad-4e3291f09dcd.jpg",
+      "PackagePath": "staticwebassets/images/24903e9a-3fc2-4212-9dad-4e3291f09dcd.jpg"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/27770190-c0dd-483c-9d12-97cea7f08a25.png",
       "PackagePath": "staticwebassets/images/27770190-c0dd-483c-9d12-97cea7f08a25.png"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/37f57deb-830f-4267-99c2-a35ace74fc23_PozaProfil.jpeg",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/34297368-67d8-44f5-b411-fd672b4eeec7.jpeg",
+      "PackagePath": "staticwebassets/images/34297368-67d8-44f5-b411-fd672b4eeec7.jpeg"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/37f57deb-830f-4267-99c2-a35ace74fc23_PozaProfil.jpeg",
       "PackagePath": "staticwebassets/images/37f57deb-830f-4267-99c2-a35ace74fc23_PozaProfil.jpeg"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/5c47cd16-ef86-42b7-9ab7-c63cff27a5b4.jpg",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/45c42984-3418-4659-a03c-490174ef2691.jpeg",
+      "PackagePath": "staticwebassets/images/45c42984-3418-4659-a03c-490174ef2691.jpeg"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/4cc141c0-727e-4ccc-8aa7-ecd0ecb9dde9_IMG_4020.jpeg",
+      "PackagePath": "staticwebassets/images/4cc141c0-727e-4ccc-8aa7-ecd0ecb9dde9_IMG_4020.jpeg"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/4d6e6577-454c-4cd1-b8d5-d83484a97689_IMG_0201.jpg",
+      "PackagePath": "staticwebassets/images/4d6e6577-454c-4cd1-b8d5-d83484a97689_IMG_0201.jpg"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/592df9c3-a148-4e98-99a9-516c2c8123b6_IMG_4533.jpeg",
+      "PackagePath": "staticwebassets/images/592df9c3-a148-4e98-99a9-516c2c8123b6_IMG_4533.jpeg"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/5c204e8a-d763-4738-bad6-a6b4b7f99298_IMG_3305.jpeg",
+      "PackagePath": "staticwebassets/images/5c204e8a-d763-4738-bad6-a6b4b7f99298_IMG_3305.jpeg"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/5c47cd16-ef86-42b7-9ab7-c63cff27a5b4.jpg",
       "PackagePath": "staticwebassets/images/5c47cd16-ef86-42b7-9ab7-c63cff27a5b4.jpg"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/6ae74f91-6885-4962-a8dc-e1bd7bf15df7.jpg",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/5d3e1e38-d58b-4ee7-be6d-34d2e8b7753b_IMG_2908.jpeg",
+      "PackagePath": "staticwebassets/images/5d3e1e38-d58b-4ee7-be6d-34d2e8b7753b_IMG_2908.jpeg"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/629c8a0c-7128-46c0-80d2-7f21a8aafcfd_IMG_4072.jpeg",
+      "PackagePath": "staticwebassets/images/629c8a0c-7128-46c0-80d2-7f21a8aafcfd_IMG_4072.jpeg"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/6ae74f91-6885-4962-a8dc-e1bd7bf15df7.jpg",
       "PackagePath": "staticwebassets/images/6ae74f91-6885-4962-a8dc-e1bd7bf15df7.jpg"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/744d8b74-6e46-4b40-96c3-72a6af870ee8.jpg",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/744d8b74-6e46-4b40-96c3-72a6af870ee8.jpg",
       "PackagePath": "staticwebassets/images/744d8b74-6e46-4b40-96c3-72a6af870ee8.jpg"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/78b21a38-9f1f-461c-9c44-4d04f2a2a22f_Screenshot 2024-12-15 at 12.05.40.png",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/78b21a38-9f1f-461c-9c44-4d04f2a2a22f_Screenshot 2024-12-15 at 12.05.40.png",
       "PackagePath": "staticwebassets/images/78b21a38-9f1f-461c-9c44-4d04f2a2a22f_Screenshot 2024-12-15 at 12.05.40.png"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/7ba56810-7c45-4f60-b7fc-55a1956b41e3.png",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/7ba56810-7c45-4f60-b7fc-55a1956b41e3.png",
       "PackagePath": "staticwebassets/images/7ba56810-7c45-4f60-b7fc-55a1956b41e3.png"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/7e7622db-38cf-4b36-8469-9963269e850c.png",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/7e7622db-38cf-4b36-8469-9963269e850c.png",
       "PackagePath": "staticwebassets/images/7e7622db-38cf-4b36-8469-9963269e850c.png"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/80bb1b7f-9bf0-4a04-9ffb-9e8d9c588df9.png",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/80bb1b7f-9bf0-4a04-9ffb-9e8d9c588df9.png",
       "PackagePath": "staticwebassets/images/80bb1b7f-9bf0-4a04-9ffb-9e8d9c588df9.png"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/8b5b9882-be98-447a-8119-f49b4f30cdc3.png",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/80e72d53-66df-4881-9630-900c41cad22c_IMG_4026.jpeg",
+      "PackagePath": "staticwebassets/images/80e72d53-66df-4881-9630-900c41cad22c_IMG_4026.jpeg"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/8b5b9882-be98-447a-8119-f49b4f30cdc3.png",
       "PackagePath": "staticwebassets/images/8b5b9882-be98-447a-8119-f49b4f30cdc3.png"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/8d56d10c-f049-43c3-b1ed-964decbf8ca7_PozaProfil.jpeg",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/8d56d10c-f049-43c3-b1ed-964decbf8ca7_PozaProfil.jpeg",
       "PackagePath": "staticwebassets/images/8d56d10c-f049-43c3-b1ed-964decbf8ca7_PozaProfil.jpeg"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/9068da9f-7781-49f1-bec0-2632b54e1b53_Orar.png",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/9068da9f-7781-49f1-bec0-2632b54e1b53_Orar.png",
       "PackagePath": "staticwebassets/images/9068da9f-7781-49f1-bec0-2632b54e1b53_Orar.png"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/a08de76f-0b18-4f61-b365-d0e93d1d506a_Orar.png",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/a08de76f-0b18-4f61-b365-d0e93d1d506a_Orar.png",
       "PackagePath": "staticwebassets/images/a08de76f-0b18-4f61-b365-d0e93d1d506a_Orar.png"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/ab138097-7e08-4a07-8b04-7ef32e2a1d3d_Orar.png",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/aabed3ff-55a8-4f2d-8849-7f6b14726554_IMG_2153.jpeg",
+      "PackagePath": "staticwebassets/images/aabed3ff-55a8-4f2d-8849-7f6b14726554_IMG_2153.jpeg"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/ab138097-7e08-4a07-8b04-7ef32e2a1d3d_Orar.png",
       "PackagePath": "staticwebassets/images/ab138097-7e08-4a07-8b04-7ef32e2a1d3d_Orar.png"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/acc79743-f2bd-4a44-bbfc-f0f061b4662c.png",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/acc79743-f2bd-4a44-bbfc-f0f061b4662c.png",
       "PackagePath": "staticwebassets/images/acc79743-f2bd-4a44-bbfc-f0f061b4662c.png"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/b8097aa7-5ba9-461f-a9d3-0bb987448f59.jpeg",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/b64735c1-7a7a-4568-8aeb-8d9de664bf33_360_F_236992283_sNOxCVQeFLd5pdqaKGh8DRGMZy7P4XKm.jpg",
+      "PackagePath": "staticwebassets/images/b64735c1-7a7a-4568-8aeb-8d9de664bf33_360_F_236992283_sNOxCVQeFLd5pdqaKGh8DRGMZy7P4XKm.jpg"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/b7ef4423-d8bd-482f-822e-aed9977c6a02.jpeg",
+      "PackagePath": "staticwebassets/images/b7ef4423-d8bd-482f-822e-aed9977c6a02.jpeg"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/b8097aa7-5ba9-461f-a9d3-0bb987448f59.jpeg",
       "PackagePath": "staticwebassets/images/b8097aa7-5ba9-461f-a9d3-0bb987448f59.jpeg"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/cad45ee6-1cb3-410d-bbe7-74c17a81acf5_Screenshot 2024-12-12 at 21.06.43.png",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/b8b7b294-b3db-4884-8036-8303cb5c580e_Screenshot 2025-01-12 at 21.07.08.png",
+      "PackagePath": "staticwebassets/images/b8b7b294-b3db-4884-8036-8303cb5c580e_Screenshot 2025-01-12 at 21.07.08.png"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/cad45ee6-1cb3-410d-bbe7-74c17a81acf5_Screenshot 2024-12-12 at 21.06.43.png",
       "PackagePath": "staticwebassets/images/cad45ee6-1cb3-410d-bbe7-74c17a81acf5_Screenshot 2024-12-12 at 21.06.43.png"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/cc2c6d69-04a3-42bb-8051-140175b3cd21.png",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/cc2c6d69-04a3-42bb-8051-140175b3cd21.png",
       "PackagePath": "staticwebassets/images/cc2c6d69-04a3-42bb-8051-140175b3cd21.png"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/default.jpeg",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/d8f66bb6-555a-475c-aec9-d4cd365ec28e_Screenshot 2025-01-12 at 21.07.08.png",
+      "PackagePath": "staticwebassets/images/d8f66bb6-555a-475c-aec9-d4cd365ec28e_Screenshot 2025-01-12 at 21.07.08.png"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/default.jpeg",
       "PackagePath": "staticwebassets/images/default.jpeg"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/e4220b71-0f33-4664-b545-a8aff3316e3c.png",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/dfcd3b99-9dd4-4a3e-b342-c37496e0ed42_Screenshot 2025-01-12 at 21.07.08.png",
+      "PackagePath": "staticwebassets/images/dfcd3b99-9dd4-4a3e-b342-c37496e0ed42_Screenshot 2025-01-12 at 21.07.08.png"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/e4220b71-0f33-4664-b545-a8aff3316e3c.png",
       "PackagePath": "staticwebassets/images/e4220b71-0f33-4664-b545-a8aff3316e3c.png"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/f1a520e7-6908-471e-a1f0-bb5ac9097f61.png",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/e82386ae-423e-4ff1-832a-87ac332dcfb2_Screenshot 2025-01-12 at 21.07.08.png",
+      "PackagePath": "staticwebassets/images/e82386ae-423e-4ff1-832a-87ac332dcfb2_Screenshot 2025-01-12 at 21.07.08.png"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/ef9d567f-8c59-4d81-82b3-a53e59978be3_Screenshot 2025-01-12 at 21.07.08.png",
+      "PackagePath": "staticwebassets/images/ef9d567f-8c59-4d81-82b3-a53e59978be3_Screenshot 2025-01-12 at 21.07.08.png"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/f1a520e7-6908-471e-a1f0-bb5ac9097f61.png",
       "PackagePath": "staticwebassets/images/f1a520e7-6908-471e-a1f0-bb5ac9097f61.png"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/fef3c1fd-e75c-438c-8720-7aad054dba9b_PozaProfil3.png",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/f51f8b48-b4ef-4fe4-bfb9-bac79726cb17_Screenshot 2025-01-12 at 21.07.08.png",
+      "PackagePath": "staticwebassets/images/f51f8b48-b4ef-4fe4-bfb9-bac79726cb17_Screenshot 2025-01-12 at 21.07.08.png"
+    },
+    {
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/fef3c1fd-e75c-438c-8720-7aad054dba9b_PozaProfil3.png",
       "PackagePath": "staticwebassets/images/fef3c1fd-e75c-438c-8720-7aad054dba9b_PozaProfil3.png"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/js/site.js",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/LICENSE",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/LICENSE",
       "PackagePath": "staticwebassets/lib/bootstrap"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery-validation/LICENSE.md",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery-validation/LICENSE.md",
       "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery/LICENSE.txt",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery/dist/jquery.js",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery/dist/jquery.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery/dist/jquery.min.js",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery/dist/jquery.min.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery/dist/jquery.min.map",
+      "Id": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery/dist/jquery.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {

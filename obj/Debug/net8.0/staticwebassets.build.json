@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1kWghtHSHc9qkhwIXTnCOl8By+k5WX76p4phhKeMX58=",
+  "Hash": "yggHeF99kisss/r1pBa4lDDcDdIHs2Cdn/euh9cQzKY=",
   "Source": "SocialMediaApp",
   "BasePath": "_content/SocialMediaApp",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "SocialMediaApp/wwwroot",
       "Source": "SocialMediaApp",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "Pattern": "**"
     }
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "/Users/emmamaciuca/.nuget/packages/microsoft.aspnetcore.identity.ui/8.0.8/staticwebassets/V5/lib/jquery/LICENSE.txt"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/obj/Debug/net8.0/scopedcss/bundle/SocialMediaApp.styles.css",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/obj/Debug/net8.0/scopedcss/bundle/SocialMediaApp.styles.css",
       "SourceId": "SocialMediaApp",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/obj/Debug/net8.0/scopedcss/bundle/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/obj/Debug/net8.0/scopedcss/bundle/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "SocialMediaApp.styles.css",
       "AssetKind": "All",
@@ -1173,13 +1173,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/obj/Debug/net8.0/scopedcss/bundle/SocialMediaApp.styles.css"
+      "OriginalItemSpec": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/obj/Debug/net8.0/scopedcss/bundle/SocialMediaApp.styles.css"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/obj/Debug/net8.0/scopedcss/projectbundle/SocialMediaApp.bundle.scp.css",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/obj/Debug/net8.0/scopedcss/projectbundle/SocialMediaApp.bundle.scp.css",
       "SourceId": "SocialMediaApp",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/obj/Debug/net8.0/scopedcss/projectbundle/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/obj/Debug/net8.0/scopedcss/projectbundle/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "SocialMediaApp.bundle.scp.css",
       "AssetKind": "All",
@@ -1192,13 +1192,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/obj/Debug/net8.0/scopedcss/projectbundle/SocialMediaApp.bundle.scp.css"
+      "OriginalItemSpec": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/obj/Debug/net8.0/scopedcss/projectbundle/SocialMediaApp.bundle.scp.css"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/css/design.css",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/css/design.css",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "css/design.css",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot/css/design.css"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/css/site.css",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/css/site.css",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/favicon.ico",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/favicon.ico",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/046f9468-7374-4a39-85ad-6a4773b4308a.jpg",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/046f9468-7374-4a39-85ad-6a4773b4308a.jpg",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/046f9468-7374-4a39-85ad-6a4773b4308a.jpg",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot/images/046f9468-7374-4a39-85ad-6a4773b4308a.jpg"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/0739e834-1ee0-4c76-ad68-aeae8a5ef5ab_Orar.png",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/0739e834-1ee0-4c76-ad68-aeae8a5ef5ab_Orar.png",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/0739e834-1ee0-4c76-ad68-aeae8a5ef5ab_Orar.png",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot/images/0739e834-1ee0-4c76-ad68-aeae8a5ef5ab_Orar.png"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/07cfc25d-87a6-4be5-8feb-5dd87420524a_PozaProfil2.jpeg",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/07cfc25d-87a6-4be5-8feb-5dd87420524a_PozaProfil2.jpeg",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/07cfc25d-87a6-4be5-8feb-5dd87420524a_PozaProfil2.jpeg",
       "AssetKind": "All",
@@ -1309,10 +1309,48 @@
       "OriginalItemSpec": "wwwroot/images/07cfc25d-87a6-4be5-8feb-5dd87420524a_PozaProfil2.jpeg"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/0f1cf7a6-aac8-4830-9019-b2d211c05943.png",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/09ad884f-2b7d-45c4-a4ce-5487088c4a29.png",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/09ad884f-2b7d-45c4-a4ce-5487088c4a29.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/09ad884f-2b7d-45c4-a4ce-5487088c4a29.png"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/0ceee8ed-24fb-4af5-865e-bc51d4318b7d.jpeg",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/0ceee8ed-24fb-4af5-865e-bc51d4318b7d.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/0ceee8ed-24fb-4af5-865e-bc51d4318b7d.jpeg"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/0f1cf7a6-aac8-4830-9019-b2d211c05943.png",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/0f1cf7a6-aac8-4830-9019-b2d211c05943.png",
       "AssetKind": "All",
@@ -1328,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot/images/0f1cf7a6-aac8-4830-9019-b2d211c05943.png"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/22bc3101-40a4-4e2b-a449-9f15d6e49a16.png",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/22bc3101-40a4-4e2b-a449-9f15d6e49a16.png",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/22bc3101-40a4-4e2b-a449-9f15d6e49a16.png",
       "AssetKind": "All",
@@ -1347,10 +1385,29 @@
       "OriginalItemSpec": "wwwroot/images/22bc3101-40a4-4e2b-a449-9f15d6e49a16.png"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/27770190-c0dd-483c-9d12-97cea7f08a25.png",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/24903e9a-3fc2-4212-9dad-4e3291f09dcd.jpg",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/24903e9a-3fc2-4212-9dad-4e3291f09dcd.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/24903e9a-3fc2-4212-9dad-4e3291f09dcd.jpg"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/27770190-c0dd-483c-9d12-97cea7f08a25.png",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/27770190-c0dd-483c-9d12-97cea7f08a25.png",
       "AssetKind": "All",
@@ -1366,10 +1423,29 @@
       "OriginalItemSpec": "wwwroot/images/27770190-c0dd-483c-9d12-97cea7f08a25.png"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/37f57deb-830f-4267-99c2-a35ace74fc23_PozaProfil.jpeg",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/34297368-67d8-44f5-b411-fd672b4eeec7.jpeg",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/34297368-67d8-44f5-b411-fd672b4eeec7.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/34297368-67d8-44f5-b411-fd672b4eeec7.jpeg"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/37f57deb-830f-4267-99c2-a35ace74fc23_PozaProfil.jpeg",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/37f57deb-830f-4267-99c2-a35ace74fc23_PozaProfil.jpeg",
       "AssetKind": "All",
@@ -1385,10 +1461,105 @@
       "OriginalItemSpec": "wwwroot/images/37f57deb-830f-4267-99c2-a35ace74fc23_PozaProfil.jpeg"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/5c47cd16-ef86-42b7-9ab7-c63cff27a5b4.jpg",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/45c42984-3418-4659-a03c-490174ef2691.jpeg",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/45c42984-3418-4659-a03c-490174ef2691.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/45c42984-3418-4659-a03c-490174ef2691.jpeg"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/4cc141c0-727e-4ccc-8aa7-ecd0ecb9dde9_IMG_4020.jpeg",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/4cc141c0-727e-4ccc-8aa7-ecd0ecb9dde9_IMG_4020.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/4cc141c0-727e-4ccc-8aa7-ecd0ecb9dde9_IMG_4020.jpeg"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/4d6e6577-454c-4cd1-b8d5-d83484a97689_IMG_0201.jpg",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/4d6e6577-454c-4cd1-b8d5-d83484a97689_IMG_0201.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/4d6e6577-454c-4cd1-b8d5-d83484a97689_IMG_0201.jpg"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/592df9c3-a148-4e98-99a9-516c2c8123b6_IMG_4533.jpeg",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/592df9c3-a148-4e98-99a9-516c2c8123b6_IMG_4533.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/592df9c3-a148-4e98-99a9-516c2c8123b6_IMG_4533.jpeg"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/5c204e8a-d763-4738-bad6-a6b4b7f99298_IMG_3305.jpeg",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/5c204e8a-d763-4738-bad6-a6b4b7f99298_IMG_3305.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/5c204e8a-d763-4738-bad6-a6b4b7f99298_IMG_3305.jpeg"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/5c47cd16-ef86-42b7-9ab7-c63cff27a5b4.jpg",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/5c47cd16-ef86-42b7-9ab7-c63cff27a5b4.jpg",
       "AssetKind": "All",
@@ -1404,10 +1575,48 @@
       "OriginalItemSpec": "wwwroot/images/5c47cd16-ef86-42b7-9ab7-c63cff27a5b4.jpg"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/6ae74f91-6885-4962-a8dc-e1bd7bf15df7.jpg",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/5d3e1e38-d58b-4ee7-be6d-34d2e8b7753b_IMG_2908.jpeg",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/5d3e1e38-d58b-4ee7-be6d-34d2e8b7753b_IMG_2908.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/5d3e1e38-d58b-4ee7-be6d-34d2e8b7753b_IMG_2908.jpeg"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/629c8a0c-7128-46c0-80d2-7f21a8aafcfd_IMG_4072.jpeg",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/629c8a0c-7128-46c0-80d2-7f21a8aafcfd_IMG_4072.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/629c8a0c-7128-46c0-80d2-7f21a8aafcfd_IMG_4072.jpeg"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/6ae74f91-6885-4962-a8dc-e1bd7bf15df7.jpg",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/6ae74f91-6885-4962-a8dc-e1bd7bf15df7.jpg",
       "AssetKind": "All",
@@ -1423,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot/images/6ae74f91-6885-4962-a8dc-e1bd7bf15df7.jpg"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/744d8b74-6e46-4b40-96c3-72a6af870ee8.jpg",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/744d8b74-6e46-4b40-96c3-72a6af870ee8.jpg",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/744d8b74-6e46-4b40-96c3-72a6af870ee8.jpg",
       "AssetKind": "All",
@@ -1442,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot/images/744d8b74-6e46-4b40-96c3-72a6af870ee8.jpg"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/78b21a38-9f1f-461c-9c44-4d04f2a2a22f_Screenshot 2024-12-15 at 12.05.40.png",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/78b21a38-9f1f-461c-9c44-4d04f2a2a22f_Screenshot 2024-12-15 at 12.05.40.png",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/78b21a38-9f1f-461c-9c44-4d04f2a2a22f_Screenshot 2024-12-15 at 12.05.40.png",
       "AssetKind": "All",
@@ -1461,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot/images/78b21a38-9f1f-461c-9c44-4d04f2a2a22f_Screenshot 2024-12-15 at 12.05.40.png"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/7ba56810-7c45-4f60-b7fc-55a1956b41e3.png",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/7ba56810-7c45-4f60-b7fc-55a1956b41e3.png",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/7ba56810-7c45-4f60-b7fc-55a1956b41e3.png",
       "AssetKind": "All",
@@ -1480,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot/images/7ba56810-7c45-4f60-b7fc-55a1956b41e3.png"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/7e7622db-38cf-4b36-8469-9963269e850c.png",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/7e7622db-38cf-4b36-8469-9963269e850c.png",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/7e7622db-38cf-4b36-8469-9963269e850c.png",
       "AssetKind": "All",
@@ -1499,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot/images/7e7622db-38cf-4b36-8469-9963269e850c.png"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/80bb1b7f-9bf0-4a04-9ffb-9e8d9c588df9.png",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/80bb1b7f-9bf0-4a04-9ffb-9e8d9c588df9.png",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/80bb1b7f-9bf0-4a04-9ffb-9e8d9c588df9.png",
       "AssetKind": "All",
@@ -1518,10 +1727,29 @@
       "OriginalItemSpec": "wwwroot/images/80bb1b7f-9bf0-4a04-9ffb-9e8d9c588df9.png"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/8b5b9882-be98-447a-8119-f49b4f30cdc3.png",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/80e72d53-66df-4881-9630-900c41cad22c_IMG_4026.jpeg",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/80e72d53-66df-4881-9630-900c41cad22c_IMG_4026.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/80e72d53-66df-4881-9630-900c41cad22c_IMG_4026.jpeg"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/8b5b9882-be98-447a-8119-f49b4f30cdc3.png",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/8b5b9882-be98-447a-8119-f49b4f30cdc3.png",
       "AssetKind": "All",
@@ -1537,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot/images/8b5b9882-be98-447a-8119-f49b4f30cdc3.png"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/8d56d10c-f049-43c3-b1ed-964decbf8ca7_PozaProfil.jpeg",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/8d56d10c-f049-43c3-b1ed-964decbf8ca7_PozaProfil.jpeg",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/8d56d10c-f049-43c3-b1ed-964decbf8ca7_PozaProfil.jpeg",
       "AssetKind": "All",
@@ -1556,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot/images/8d56d10c-f049-43c3-b1ed-964decbf8ca7_PozaProfil.jpeg"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/9068da9f-7781-49f1-bec0-2632b54e1b53_Orar.png",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/9068da9f-7781-49f1-bec0-2632b54e1b53_Orar.png",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/9068da9f-7781-49f1-bec0-2632b54e1b53_Orar.png",
       "AssetKind": "All",
@@ -1575,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot/images/9068da9f-7781-49f1-bec0-2632b54e1b53_Orar.png"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/a08de76f-0b18-4f61-b365-d0e93d1d506a_Orar.png",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/a08de76f-0b18-4f61-b365-d0e93d1d506a_Orar.png",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/a08de76f-0b18-4f61-b365-d0e93d1d506a_Orar.png",
       "AssetKind": "All",
@@ -1594,10 +1822,29 @@
       "OriginalItemSpec": "wwwroot/images/a08de76f-0b18-4f61-b365-d0e93d1d506a_Orar.png"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/ab138097-7e08-4a07-8b04-7ef32e2a1d3d_Orar.png",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/aabed3ff-55a8-4f2d-8849-7f6b14726554_IMG_2153.jpeg",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/aabed3ff-55a8-4f2d-8849-7f6b14726554_IMG_2153.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/aabed3ff-55a8-4f2d-8849-7f6b14726554_IMG_2153.jpeg"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/ab138097-7e08-4a07-8b04-7ef32e2a1d3d_Orar.png",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/ab138097-7e08-4a07-8b04-7ef32e2a1d3d_Orar.png",
       "AssetKind": "All",
@@ -1613,10 +1860,10 @@
       "OriginalItemSpec": "wwwroot/images/ab138097-7e08-4a07-8b04-7ef32e2a1d3d_Orar.png"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/acc79743-f2bd-4a44-bbfc-f0f061b4662c.png",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/acc79743-f2bd-4a44-bbfc-f0f061b4662c.png",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/acc79743-f2bd-4a44-bbfc-f0f061b4662c.png",
       "AssetKind": "All",
@@ -1632,10 +1879,48 @@
       "OriginalItemSpec": "wwwroot/images/acc79743-f2bd-4a44-bbfc-f0f061b4662c.png"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/b8097aa7-5ba9-461f-a9d3-0bb987448f59.jpeg",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/b64735c1-7a7a-4568-8aeb-8d9de664bf33_360_F_236992283_sNOxCVQeFLd5pdqaKGh8DRGMZy7P4XKm.jpg",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/b64735c1-7a7a-4568-8aeb-8d9de664bf33_360_F_236992283_sNOxCVQeFLd5pdqaKGh8DRGMZy7P4XKm.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/b64735c1-7a7a-4568-8aeb-8d9de664bf33_360_F_236992283_sNOxCVQeFLd5pdqaKGh8DRGMZy7P4XKm.jpg"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/b7ef4423-d8bd-482f-822e-aed9977c6a02.jpeg",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/b7ef4423-d8bd-482f-822e-aed9977c6a02.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/b7ef4423-d8bd-482f-822e-aed9977c6a02.jpeg"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/b8097aa7-5ba9-461f-a9d3-0bb987448f59.jpeg",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/b8097aa7-5ba9-461f-a9d3-0bb987448f59.jpeg",
       "AssetKind": "All",
@@ -1651,10 +1936,29 @@
       "OriginalItemSpec": "wwwroot/images/b8097aa7-5ba9-461f-a9d3-0bb987448f59.jpeg"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/cad45ee6-1cb3-410d-bbe7-74c17a81acf5_Screenshot 2024-12-12 at 21.06.43.png",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/b8b7b294-b3db-4884-8036-8303cb5c580e_Screenshot 2025-01-12 at 21.07.08.png",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/b8b7b294-b3db-4884-8036-8303cb5c580e_Screenshot 2025-01-12 at 21.07.08.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/b8b7b294-b3db-4884-8036-8303cb5c580e_Screenshot 2025-01-12 at 21.07.08.png"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/cad45ee6-1cb3-410d-bbe7-74c17a81acf5_Screenshot 2024-12-12 at 21.06.43.png",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/cad45ee6-1cb3-410d-bbe7-74c17a81acf5_Screenshot 2024-12-12 at 21.06.43.png",
       "AssetKind": "All",
@@ -1670,10 +1974,10 @@
       "OriginalItemSpec": "wwwroot/images/cad45ee6-1cb3-410d-bbe7-74c17a81acf5_Screenshot 2024-12-12 at 21.06.43.png"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/cc2c6d69-04a3-42bb-8051-140175b3cd21.png",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/cc2c6d69-04a3-42bb-8051-140175b3cd21.png",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/cc2c6d69-04a3-42bb-8051-140175b3cd21.png",
       "AssetKind": "All",
@@ -1689,10 +1993,29 @@
       "OriginalItemSpec": "wwwroot/images/cc2c6d69-04a3-42bb-8051-140175b3cd21.png"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/default.jpeg",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/d8f66bb6-555a-475c-aec9-d4cd365ec28e_Screenshot 2025-01-12 at 21.07.08.png",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/d8f66bb6-555a-475c-aec9-d4cd365ec28e_Screenshot 2025-01-12 at 21.07.08.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/d8f66bb6-555a-475c-aec9-d4cd365ec28e_Screenshot 2025-01-12 at 21.07.08.png"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/default.jpeg",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/default.jpeg",
       "AssetKind": "All",
@@ -1708,10 +2031,29 @@
       "OriginalItemSpec": "wwwroot/images/default.jpeg"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/e4220b71-0f33-4664-b545-a8aff3316e3c.png",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/dfcd3b99-9dd4-4a3e-b342-c37496e0ed42_Screenshot 2025-01-12 at 21.07.08.png",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/dfcd3b99-9dd4-4a3e-b342-c37496e0ed42_Screenshot 2025-01-12 at 21.07.08.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/dfcd3b99-9dd4-4a3e-b342-c37496e0ed42_Screenshot 2025-01-12 at 21.07.08.png"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/e4220b71-0f33-4664-b545-a8aff3316e3c.png",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/e4220b71-0f33-4664-b545-a8aff3316e3c.png",
       "AssetKind": "All",
@@ -1727,10 +2069,48 @@
       "OriginalItemSpec": "wwwroot/images/e4220b71-0f33-4664-b545-a8aff3316e3c.png"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/f1a520e7-6908-471e-a1f0-bb5ac9097f61.png",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/e82386ae-423e-4ff1-832a-87ac332dcfb2_Screenshot 2025-01-12 at 21.07.08.png",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/e82386ae-423e-4ff1-832a-87ac332dcfb2_Screenshot 2025-01-12 at 21.07.08.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/e82386ae-423e-4ff1-832a-87ac332dcfb2_Screenshot 2025-01-12 at 21.07.08.png"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/ef9d567f-8c59-4d81-82b3-a53e59978be3_Screenshot 2025-01-12 at 21.07.08.png",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/ef9d567f-8c59-4d81-82b3-a53e59978be3_Screenshot 2025-01-12 at 21.07.08.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/ef9d567f-8c59-4d81-82b3-a53e59978be3_Screenshot 2025-01-12 at 21.07.08.png"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/f1a520e7-6908-471e-a1f0-bb5ac9097f61.png",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/f1a520e7-6908-471e-a1f0-bb5ac9097f61.png",
       "AssetKind": "All",
@@ -1746,10 +2126,29 @@
       "OriginalItemSpec": "wwwroot/images/f1a520e7-6908-471e-a1f0-bb5ac9097f61.png"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/images/fef3c1fd-e75c-438c-8720-7aad054dba9b_PozaProfil3.png",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/f51f8b48-b4ef-4fe4-bfb9-bac79726cb17_Screenshot 2025-01-12 at 21.07.08.png",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
+      "BasePath": "_content/SocialMediaApp",
+      "RelativePath": "images/f51f8b48-b4ef-4fe4-bfb9-bac79726cb17_Screenshot 2025-01-12 at 21.07.08.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/f51f8b48-b4ef-4fe4-bfb9-bac79726cb17_Screenshot 2025-01-12 at 21.07.08.png"
+    },
+    {
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/images/fef3c1fd-e75c-438c-8720-7aad054dba9b_PozaProfil3.png",
+      "SourceId": "SocialMediaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "images/fef3c1fd-e75c-438c-8720-7aad054dba9b_PozaProfil3.png",
       "AssetKind": "All",
@@ -1765,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot/images/fef3c1fd-e75c-438c-8720-7aad054dba9b_PozaProfil3.png"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/js/site.js",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/js/site.js",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1784,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot/js/site.js"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1803,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1822,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1841,10 +2240,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1860,10 +2259,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1879,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1898,10 +2297,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1917,10 +2316,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1936,10 +2335,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1955,10 +2354,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1974,10 +2373,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1993,10 +2392,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2012,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2031,10 +2430,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2050,10 +2449,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2069,10 +2468,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2088,10 +2487,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2107,10 +2506,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2126,10 +2525,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2145,10 +2544,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2164,10 +2563,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2183,10 +2582,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2202,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2221,10 +2620,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2240,10 +2639,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -2259,10 +2658,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -2278,10 +2677,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -2297,10 +2696,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -2316,10 +2715,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -2335,10 +2734,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -2354,10 +2753,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -2373,10 +2772,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -2392,10 +2791,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2411,10 +2810,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2430,10 +2829,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2449,10 +2848,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2468,10 +2867,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2487,10 +2886,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2506,10 +2905,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2525,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2544,10 +2943,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2563,10 +2962,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2582,10 +2981,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2601,10 +3000,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2620,10 +3019,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/bootstrap/LICENSE",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/bootstrap/LICENSE",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2639,10 +3038,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/LICENSE"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2658,10 +3057,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2677,10 +3076,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2696,10 +3095,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2715,10 +3114,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2734,10 +3133,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2753,10 +3152,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2772,10 +3171,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery-validation/LICENSE.md",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery-validation/LICENSE.md",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2791,10 +3190,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery/dist/jquery.js",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery/dist/jquery.js",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2810,10 +3209,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.js"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery/dist/jquery.min.js",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery/dist/jquery.min.js",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2829,10 +3228,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery/dist/jquery.min.map",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery/dist/jquery.min.map",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2848,10 +3247,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/lib/jquery/LICENSE.txt",
+      "Identity": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/lib/jquery/LICENSE.txt",
       "SourceId": "SocialMediaApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/wwwroot/",
+      "ContentRoot": "/Users/emmamaciuca/Desktop/Proiect.NET/SocialMediaApp/SocialMediaApp/wwwroot/",
       "BasePath": "_content/SocialMediaApp",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",

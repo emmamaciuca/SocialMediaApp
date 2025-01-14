@@ -307,6 +307,8 @@ namespace SocialMediaApp.Controllers
             //se sterge cerera din userGroups
             if(userGroup != null)
             {
+                var userMessages = db.Messages.Where(m => m.GroupId == userGroup.GroupId && m.UserId == userGroup.UserId);
+                db.Messages.RemoveRange(userMessages);
                 db.UserGroups.Remove(userGroup);
                 db.SaveChanges();
                 TempData["Message"] = "Ai părăsit grupul";

@@ -73,10 +73,14 @@ namespace SocialMediaApp.Controllers
 
                 db.Follows.Add(followRequest);
                 await db.SaveChangesAsync();
+                TempData["Message"] = "Ai trimis cererea!";
+                TempData["messageType"] = "alert-danger";
 
                 return RedirectToAction("Index", "Users", new { message = "Friend request sent!" });
             }
 
+            TempData["Message"] = "Cererea a fost deja trimisa!";
+            TempData["messageType"] = "alert-danger";
             return RedirectToAction("Index", "Users", new { message = "You already sent a request." });
         }
 
